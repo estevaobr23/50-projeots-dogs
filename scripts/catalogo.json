@@ -1,0 +1,402 @@
+[
+  {
+    "codigo": "01",
+    "slug": "casinha-classica",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha Clássica com Telhado de Duas Águas",
+    "en": "a classic wooden dog house with a gabled (two-slope) roof",
+    "detalhe_en": "Simple rectangular body with a front entrance arch opening, pitched gable roof with overhanging eaves, raised off the ground on a low plinth base, built from plywood panels with visible edge banding. Sized for a medium-to-large dog."
+  },
+  {
+    "codigo": "02",
+    "slug": "casinha-varanda-frontal",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha com Varanda Frontal",
+    "en": "a wooden dog house with a covered front porch",
+    "detalhe_en": "Rectangular body with a gabled roof extended forward to form a covered porch area in front of the entrance, supported by two thin square posts. The porch floor is flush with the house's raised plinth base. Entrance is a plain rectangular doorway (not arched) centered under the porch."
+  },
+  {
+    "codigo": "03",
+    "slug": "casinha-isolada-externa",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha Isolada para Área Externa",
+    "en": "an insulated outdoor dog house with double-wall construction",
+    "detalhe_en": "Rectangular body with visibly thick double-layer walls (an air-gap insulation look, shown as a slightly thicker wall section at the entrance opening revealing two parallel panel layers), gabled roof with generous overhang, raised well off the ground on a taller plinth/leg base than a standard doghouse, for outdoor weather protection. Arched entrance."
+  },
+  {
+    "codigo": "04",
+    "slug": "casinha-telhado-removivel",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha com Telhado Removível",
+    "en": "a wooden dog house with a fully removable gabled roof, shown lifted off",
+    "detalhe_en": "Rectangular open-top body (four walls, no lid) shown alongside its separate gabled roof piece hovering slightly above it, both clearly the same width so the roof is understood to lift completely off the walls for cleaning access. Arched front entrance. Simple hinge or peg details visible at the roof's resting edge."
+  },
+  {
+    "codigo": "05",
+    "slug": "casinha-dupla",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha Dupla para Dois Cães",
+    "en": "a double wooden dog house with two separate chambers under one shared roof",
+    "detalhe_en": "Wide rectangular body divided by a visible center partition wall into two equal chambers, each with its own separate arched entrance on the front, a single continuous gabled roof spanning both chambers, raised on a shared plinth base."
+  },
+  {
+    "codigo": "06",
+    "slug": "casinha-sob-escada",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha Sob a Escada",
+    "en": "a built-in wooden dog nook designed to fit under a staircase, shown as a standalone triangular-profile cabinet",
+    "detalhe_en": "A triangular-profile enclosed box (tall vertical face on one side sloping down to a low point on the other, mimicking the underside of stairs), with a rectangular entrance cut into the tall vertical face, flat closed panels elsewhere, built-in cabinetry look with a slightly recessed toe-kick at the base rather than legs."
+  },
+  {
+    "codigo": "07",
+    "slug": "casinha-aparador-sala",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha-Aparador de Sala",
+    "en": "a living-room console table with an integrated dog house nook underneath",
+    "detalhe_en": "A low rectangular console/sideboard cabinet with a flat tabletop surface on top (for use as furniture), and an open arched nook opening on the front lower half sized for a dog to enter and rest inside, on slim tapered furniture legs. Modern minimalist furniture look, not a rustic doghouse look."
+  },
+  {
+    "codigo": "08",
+    "slug": "casinha-suspensa-estrado",
+    "categoria": "Casinhas e abrigos",
+    "nome": "Casinha Suspensa com Estrado",
+    "en": "a wooden dog house raised well above the ground on tall slatted-floor legs",
+    "detalhe_en": "Rectangular body with a gabled roof and arched entrance, sitting on four visibly tall corner legs that lift the entire floor a significant height off the ground, with the floor itself made of a slatted/ribbed panel (small parallel gaps) for ventilation and drainage."
+  },
+  {
+    "codigo": "09",
+    "slug": "cama-estrado-ripado",
+    "categoria": "Camas e descanso",
+    "nome": "Cama Retangular com Estrado Ripado",
+    "en": "a simple rectangular wooden dog bed frame with a slatted base",
+    "detalhe_en": "Low rectangular frame with a floor made of evenly spaced parallel wooden slats (visible small gaps between them for airflow), short simple block legs at each corner, no side walls or backrest — just an open frame. A loose flat cushion sits on top of the slats."
+  },
+  {
+    "codigo": "10",
+    "slug": "cama-sofa-encosto",
+    "categoria": "Camas e descanso",
+    "nome": "Cama-Sofá com Encosto em Três Lados",
+    "en": "a wooden dog sofa bed with raised backrest panels on three sides",
+    "detalhe_en": "Low rectangular platform bed with slatted base, solid raised panels on the back and both sides forming a sofa-like surround, open on the front for the dog to step in, short tapered legs lifting it off the floor. Includes a plain flat cushion sitting on the slatted base."
+  },
+  {
+    "codigo": "11",
+    "slug": "cama-pes-torneados",
+    "categoria": "Camas e descanso",
+    "nome": "Cama Elevada com Pés Torneados",
+    "en": "a Scandinavian-style elevated dog bed frame with turned wooden legs",
+    "detalhe_en": "Simple rectangular bed frame, slightly taller off the ground than a standard bed, standing on four distinctly turned/lathed round wooden legs (bulbous mid-section, tapered ends, mid-century furniture look) rather than plain square legs, slatted base, no side walls, flat cushion on top."
+  },
+  {
+    "codigo": "12",
+    "slug": "cama-dossel-cabeceira",
+    "categoria": "Camas e descanso",
+    "nome": "Cama com Dossel e Cabeceira Alta",
+    "en": "a wooden dog bed with a tall decorative headboard panel and a canopy frame",
+    "detalhe_en": "Rectangular bed base with a slatted floor, a tall solid headboard panel rising at one end, and four thin vertical posts at the corners connecting to a simple open rectangular canopy frame overhead (no fabric draped on it — just the bare wooden frame), bedroom furniture look."
+  },
+  {
+    "codigo": "13",
+    "slug": "cama-gaveta",
+    "categoria": "Camas e descanso",
+    "nome": "Cama Gaveta sob Móvel Existente",
+    "en": "a pull-out drawer-style dog bed on a sliding rail base, shown partially pulled out from beneath a plain rectangular cabinet block",
+    "detalhe_en": "A shallow rectangular tray/drawer with low side rails and a flat cushion inside, mounted on visible metal drawer slide rails, shown extended halfway out from underneath a simple plain rectangular wooden cabinet base (the cabinet shown only as a plain box, no other detail needed) to demonstrate the sliding mechanism."
+  },
+  {
+    "codigo": "14",
+    "slug": "cama-ortopedica-bordas-baixas",
+    "categoria": "Camas e descanso",
+    "nome": "Cama Ortopédica com Bordas Baixas",
+    "en": "a low-entry orthopedic dog bed frame with very low side borders for easy step-in access",
+    "detalhe_en": "Wide, very low rectangular frame sitting almost flush with the ground (minimal leg height), with shallow low-profile side rails only a few centimeters tall (not full walls), slatted base, thick supportive flat cushion filling the frame, designed to be stepped into without lifting a leg."
+  },
+  {
+    "codigo": "15",
+    "slug": "beliche-dois-caes",
+    "categoria": "Camas e descanso",
+    "nome": "Beliche para Dois Cães Pequenos",
+    "en": "a two-tier bunk bed for small dogs, similar to a human bunk bed but scaled down",
+    "detalhe_en": "Two stacked rectangular bed platforms (lower and upper), connected by four corner posts, with a small inclined side ramp with slats leading from the ground up to the upper bunk's opening on one side, open fronts on both levels, flat cushions on each platform."
+  },
+  {
+    "codigo": "16",
+    "slug": "comedouro-elevado-duplo",
+    "categoria": "Alimentação",
+    "nome": "Comedouro Elevado Duplo",
+    "en": "an elevated double-bowl wooden dog feeding stand",
+    "detalhe_en": "A raised rectangular wooden platform/stand at chest height for a medium dog, with two circular cutouts on the top surface sized to hold two round bowls (bowls shown as plain metal or ceramic bowls sitting in the cutouts), standing on four simple straight legs."
+  },
+  {
+    "codigo": "17",
+    "slug": "comedouro-altura-regulavel",
+    "categoria": "Alimentação",
+    "nome": "Comedouro com Altura Regulável",
+    "en": "an adjustable-height wooden dog feeding stand with a telescoping leg mechanism",
+    "detalhe_en": "A rectangular top platform with two circular bowl cutouts, supported by four legs that are visibly built from two overlapping wooden sections each (a thicker outer sleeve and a thinner inner leg sliding inside it) with a row of peg holes visible on the inner leg, implying adjustable height notches."
+  },
+  {
+    "codigo": "18",
+    "slug": "comedouro-porta-racao",
+    "categoria": "Alimentação",
+    "nome": "Comedouro com Porta-Ração Embutido",
+    "en": "a wooden dog feeding station with a built-in enclosed storage cabinet for a food bag",
+    "detalhe_en": "A rectangular counter-height cabinet with a closed cabinet door on the front (with a simple round or bar-shaped door handle) for storing a bag of dog food inside, and two circular bowl cutouts on the top surface, standing on four short legs or a plinth base."
+  },
+  {
+    "codigo": "19",
+    "slug": "comedouro-lento",
+    "categoria": "Alimentação",
+    "nome": "Comedouro Lento com Labirinto",
+    "en": "a slow-feeder wooden dog bowl stand with a maze pattern carved into the bowl interior",
+    "detalhe_en": "A low wooden stand or tray holding a single wide shallow bowl whose interior floor has a raised maze/labyrinth pattern of wooden ridges and bumps forcing the dog to eat around obstacles, short simple legs, no lid."
+  },
+  {
+    "codigo": "20",
+    "slug": "estacao-alimentacao-canto",
+    "categoria": "Alimentação",
+    "nome": "Estação de Alimentação de Canto",
+    "en": "a corner-fitting wooden dog feeding stand designed to tuck into a room corner",
+    "detalhe_en": "A triangular-topped platform (two straight back edges meeting at a 90° corner, one angled front edge) sized to fit snugly into a room corner, with two circular bowl cutouts near the angled front edge, standing on three legs (two at the back corner, one at the front point)."
+  },
+  {
+    "codigo": "21",
+    "slug": "comedouro-baixo-pequeno-porte",
+    "categoria": "Alimentação",
+    "nome": "Comedouro Baixo para Raças Pequenas",
+    "en": "a very low, small-scale wooden feeding stand proportioned for small dog breeds",
+    "detalhe_en": "A small rectangular platform very close to the ground (short stubby legs, only a few centimeters of clearance) with two small circular bowl cutouts, overall miniature scale compared to a standard feeding stand, simple clean construction."
+  },
+  {
+    "codigo": "22",
+    "slug": "rampa-sofa",
+    "categoria": "Acessibilidade",
+    "nome": "Rampa para Sofá com Superfície Antiderrapante",
+    "en": "a wooden dog ramp for climbing onto a sofa",
+    "detalhe_en": "Straight inclined ramp board with low side rails, horizontal anti-slip grip strips running across the walking surface, a hooked top end that rests over a sofa seat, and a rubber-footed bottom end resting on the floor. Supported by a simple folding leg frame underneath."
+  },
+  {
+    "codigo": "23",
+    "slug": "rampa-dobravel-carro",
+    "categoria": "Acessibilidade",
+    "nome": "Rampa Dobrável para Carro",
+    "en": "a wooden folding dog ramp for a car trunk, shown both extended flat and with a visible center fold hinge",
+    "detalhe_en": "A long narrow ramp board with anti-slip grip strips across its walking surface and low side rails, with a visible hinge line across the middle of its length allowing the ramp to fold in half, plus small folded rubber feet at both ends."
+  },
+  {
+    "codigo": "24",
+    "slug": "escada-cama",
+    "categoria": "Acessibilidade",
+    "nome": "Escada de 3 Degraus para Cama",
+    "en": "a three-step wooden pet stair set for reaching a tall bed",
+    "detalhe_en": "A solid stepped wooden block/staircase with exactly three flat rectangular treads increasing in height from front to back, side panels enclosing the steps (a solid stair box, not an open ladder frame), wide stable footprint, top step at bed-mattress height."
+  },
+  {
+    "codigo": "25",
+    "slug": "escada-bau",
+    "categoria": "Acessibilidade",
+    "nome": "Escada-Baú com Tampos que Abrem",
+    "en": "a three-step wooden pet stair set where each step's top tread is a hinged lid opening into internal toy storage compartments",
+    "detalhe_en": "Same solid three-step stair box shape as a standard pet staircase, but one tread is shown lifted open on a hinge revealing a hollow storage compartment underneath it (empty, no toys drawn inside), demonstrating each step doubles as a storage box lid."
+  },
+  {
+    "codigo": "26",
+    "slug": "rampa-degraus-combinados",
+    "categoria": "Acessibilidade",
+    "nome": "Rampa de Degraus Combinados",
+    "en": "a hybrid wooden pet ramp-and-stair combo where one half is a smooth incline and the other half has stepped treads",
+    "detalhe_en": "A single wide unit split lengthwise: one side is a smooth flat inclined ramp surface with anti-slip strips, the other side (running parallel) is a stepped staircase with two or three flat treads, both reaching the same top height, joined side by side as one piece of furniture."
+  },
+  {
+    "codigo": "27",
+    "slug": "rampa-piscina-deck",
+    "categoria": "Acessibilidade",
+    "nome": "Rampa para Piscina ou Deck",
+    "en": "a wooden dog ramp designed to hook over a pool edge or deck ledge for safe water exit",
+    "detalhe_en": "A long inclined ramp board with anti-slip strips and low side rails, with a distinctive flat hooked lip at the top end designed to rest over a pool coping edge or deck ledge, and a wider flared, slightly submerged-looking bottom end resting at a shallower angle near the water line."
+  },
+  {
+    "codigo": "28",
+    "slug": "bau-organizador-brinquedos",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Baú Organizador de Brinquedos",
+    "en": "a rectangular wooden dog toy storage chest with a hinged lid",
+    "detalhe_en": "A simple rectangular box/chest with a flat hinged lid on top (shown slightly ajar to reveal it opens), visible hinge hardware at the back edge, standing on four short block feet, plain flat side panels with no other cutouts."
+  },
+  {
+    "codigo": "29",
+    "slug": "painel-parede-coleiras",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Painel de Parede para Coleiras e Guias",
+    "en": "a wall-mounted wooden organizer panel with hooks for dog leashes and collars",
+    "detalhe_en": "A flat rectangular wooden board meant to hang on a wall, with a row of evenly spaced wooden or metal peg hooks protruding from its face, and a small shelf ledge running along the bottom edge, thin profile since it is wall-mounted (no legs, no depth)."
+  },
+  {
+    "codigo": "30",
+    "slug": "armario-racao-dosador",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Armário de Ração com Dosador",
+    "en": "a wooden dog food storage cabinet with a built-in gravity dispenser scoop chute",
+    "detalhe_en": "A tall rectangular cabinet with a closed front door, and a small angled chute/spout protruding near the bottom front with a flip-open flap, implying food is dispensed from inside by opening the flap and letting it pour out by gravity, standing on a plinth base."
+  },
+  {
+    "codigo": "31",
+    "slug": "estacao-entrada",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Estação de Entrada com Guia, Toalha e Tigela",
+    "en": "a wooden entryway dog station combining a leash hook, a towel bar, and a bowl shelf",
+    "detalhe_en": "A vertical wall-mounted or freestanding narrow unit combining three features stacked vertically: a hook near the top for hanging a leash, a horizontal bar/rod lower down for hanging a towel, and a small shelf ledge at the bottom holding a single round bowl cutout."
+  },
+  {
+    "codigo": "32",
+    "slug": "banco-bau-entrada",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Banco-Baú de Entrada com Gancho",
+    "en": "an entryway wooden bench with a hinged storage chest seat and a coat/leash hook on the backrest",
+    "detalhe_en": "A rectangular bench with a flat hinged seat lid (storage chest underneath, shown slightly ajar), a low solid backrest panel along one long side with one or two hooks protruding from it, standing on simple block legs, human-sized entryway furniture."
+  },
+  {
+    "codigo": "33",
+    "slug": "carrinho-apoio-rodizios",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Carrinho de Apoio com Rodízios",
+    "en": "a small wooden utility cart on caster wheels for carrying dog food and supplies to the yard",
+    "detalhe_en": "A simple two-tier open shelf cart (a lower shelf and an upper shelf, connected by four corner posts), with four visible caster wheels at the base, open sides with no walls, flat-panel shelves."
+  },
+  {
+    "codigo": "34",
+    "slug": "divisoria-portao-vao",
+    "categoria": "Organização e móveis de apoio",
+    "nome": "Divisória / Portão de Vão com Trava",
+    "en": "a freestanding wooden pet safety gate designed to block a doorway or staircase opening",
+    "detalhe_en": "A rectangular slatted gate panel (evenly spaced vertical wooden bars, like a fence section) set within a simple frame, with a visible sliding or pivoting latch mechanism on one side, mounted on or between two vertical side posts implying it spans a doorway opening."
+  },
+  {
+    "codigo": "35",
+    "slug": "mesa-tosa-braco",
+    "categoria": "Banho, tosa e higiene",
+    "nome": "Mesa de Tosa com Braço e Trava de Segurança",
+    "en": "a professional wooden dog grooming table with an adjustable overhead arm and safety loop",
+    "detalhe_en": "A sturdy rectangular table with a non-slip rubber-matted top surface, standing on four thick square legs, with a tall vertical post rising from one corner topped by a horizontal swing arm from which a safety loop/leash hangs down over the table surface."
+  },
+  {
+    "codigo": "36",
+    "slug": "banheira-elevada-ralo",
+    "categoria": "Banho, tosa e higiene",
+    "nome": "Banheira Elevada com Ralo",
+    "en": "an elevated wooden-framed dog bathing tub stand with a drain fitting at the bottom",
+    "detalhe_en": "A raised rectangular tub-like basin with solid walls on all four sides (deep enough to bathe a dog standing inside), set into or supported by a sturdy wooden frame at counter height, with a small circular drain fitting visible in the center of the tub floor."
+  },
+  {
+    "codigo": "37",
+    "slug": "escada-acesso-banheira",
+    "categoria": "Banho, tosa e higiene",
+    "nome": "Escada de Acesso à Banheira",
+    "en": "a wooden pet stair ramp designed specifically to lead a dog up into an elevated bathing tub",
+    "detalhe_en": "A stepped wooden staircase (two or three wide, non-slip textured treads) shown positioned alongside a tall vertical panel representing the side of a raised tub, with the top step level with the tub's rim height, wide sturdy footprint for stability."
+  },
+  {
+    "codigo": "38",
+    "slug": "estacao-secagem-secador",
+    "categoria": "Banho, tosa e higiene",
+    "nome": "Estação de Secagem com Suporte para Secador",
+    "en": "a wooden dog drying station stand with an integrated hands-free hair dryer holder arm",
+    "detalhe_en": "A raised rectangular platform (grooming stand) with a non-slip surface, standing on four legs, with a thin articulated arm extending upward from one corner ending in a simple cylindrical clamp/holder shaped to grip a hair dryer barrel."
+  },
+  {
+    "codigo": "39",
+    "slug": "tapete-bandeja-patas",
+    "categoria": "Banho, tosa e higiene",
+    "nome": "Tapete-Bandeja de Patas da Entrada",
+    "en": "a shallow wooden-framed paw-cleaning tray with a raised grate insert for the entryway",
+    "detalhe_en": "A very shallow rectangular tray/frame with short low walls, containing a removable slatted wooden grate insert sitting slightly above the tray floor (shown lifted slightly to reveal the empty catch basin underneath), flat and low-profile for placement at a doorway."
+  },
+  {
+    "codigo": "40",
+    "slug": "canil-modular-paineis",
+    "categoria": "Área externa e quintal",
+    "nome": "Canil Modular com Painéis",
+    "en": "a modular outdoor dog kennel made of connectable wooden fence panels forming an enclosure",
+    "detalhe_en": "Several identical flat slatted fence panels (vertical wooden bars in a frame, like small fence sections) joined edge to edge at right angles to form a small rectangular enclosure, with one panel functioning as a hinged gate with a simple latch, no roof."
+  },
+  {
+    "codigo": "41",
+    "slug": "cobertura-telheiro-canil",
+    "categoria": "Área externa e quintal",
+    "nome": "Cobertura / Telheiro para Canil",
+    "en": "a simple wooden shelter roof structure designed to cover an outdoor kennel enclosure",
+    "detalhe_en": "A single flat or gently single-sloped roof panel supported by four corner posts, forming an open-sided shelter (no walls, just a roof on posts), sized to span over a kennel enclosure below, weatherproof overlapping panel look on the roof surface."
+  },
+  {
+    "codigo": "42",
+    "slug": "caixa-areia-cavar",
+    "categoria": "Área externa e quintal",
+    "nome": "Caixa de Areia para Cavar",
+    "en": "a wooden raised sandbox frame designed for a dog to dig in, filled with sand",
+    "detalhe_en": "A low rectangular open-top frame box with short solid walls, filled visibly with sand up near the rim (sand texture different from the wood), corner posts slightly taller than the walls, no lid."
+  },
+  {
+    "codigo": "43",
+    "slug": "bebedouro-externo-reservatorio",
+    "categoria": "Área externa e quintal",
+    "nome": "Bebedouro Externo com Reservatório",
+    "en": "an outdoor wooden dog water station stand with a large gravity-fed water reservoir jug mounted above a bowl",
+    "detalhe_en": "A wooden stand/frame holding a large inverted cylindrical water reservoir container mounted upside down above a wide shallow bowl positioned directly beneath its spout, implying gravity-fed water refill, standing on a sturdy base."
+  },
+  {
+    "codigo": "44",
+    "slug": "banco-quintal-abrigo",
+    "categoria": "Área externa e quintal",
+    "nome": "Banco de Quintal com Abrigo Embaixo",
+    "en": "an outdoor wooden garden bench with an open dog shelter nook built into the space underneath the seat",
+    "detalhe_en": "A sturdy human-sized bench with a flat seat and simple backrest, elevated on a solid enclosed base rather than plain legs, with an open rectangular nook opening cut into the front of that base sized for a dog to lie down inside, sheltered from sun and rain."
+  },
+  {
+    "codigo": "45",
+    "slug": "portao-passagem-cerca",
+    "categoria": "Área externa e quintal",
+    "nome": "Portão de Passagem Pet na Cerca",
+    "en": "a small swinging wooden pet passage door built into a fence panel section",
+    "detalhe_en": "A flat vertical fence panel section (vertical wooden slats) with a smaller rectangular flap door cut into its lower portion, mounted on visible small hinges along one edge of the cutout and shown slightly ajar to demonstrate it swings open, sized for a dog to push through."
+  },
+  {
+    "codigo": "46",
+    "slug": "agility-basico",
+    "categoria": "Brincar e treinar",
+    "nome": "Circuito de Agility Básico (3 peças)",
+    "en": "a basic wooden dog agility training set consisting of three separate pieces: a jump hurdle, a weave-pole slalom, and a tunnel-like pass-through arch",
+    "detalhe_en": "Three distinct simple wooden pieces shown together: (1) a low horizontal jump bar resting on two side supports with adjustable height notches, (2) a row of vertical slalom poles fixed upright in a straight line spaced apart for weaving, (3) a simple open A-frame or arch-shaped pass-through frame wide enough for a dog to walk through."
+  },
+  {
+    "codigo": "47",
+    "slug": "plataforma-comando",
+    "categoria": "Brincar e treinar",
+    "nome": "Plataforma de Comando (Place Board)",
+    "en": "a low round or square wooden dog training platform (place board) for teaching a dog to stay in position",
+    "detalhe_en": "A simple flat round (or slightly rounded-square) platform disc, raised just a few centimeters off the ground on a short solid center pedestal base, non-slip textured top surface, minimalist single-piece look."
+  },
+  {
+    "codigo": "48",
+    "slug": "tabua-farejamento",
+    "categoria": "Brincar e treinar",
+    "nome": "Tábua de Farejamento em Madeira",
+    "en": "a wooden dog snuffle/sniffing enrichment board with multiple hidden compartments",
+    "detalhe_en": "A flat rectangular board with a grid of small square or round holes cut into its top surface, some shown with small hinged flip-lids covering them and others open, revealing shallow compartments underneath for hiding treats, low profile, sits flat on the floor."
+  },
+  {
+    "codigo": "49",
+    "slug": "caixa-enriquecimento-tampas",
+    "categoria": "Brincar e treinar",
+    "nome": "Caixa de Enriquecimento com Tampas",
+    "en": "a wooden dog enrichment puzzle box with a row of small hinged lids the dog can flip open",
+    "detalhe_en": "A shallow rectangular box divided into a row of separate small square compartments, each compartment covered by its own small hinged flip-top lid, some lids shown open and some closed, low profile so a dog can nose the lids open, sits flat on the floor."
+  },
+  {
+    "codigo": "50",
+    "slug": "poste-marcacao-quintal",
+    "categoria": "Brincar e treinar",
+    "nome": "Poste de Marcação para Quintal",
+    "en": "a freestanding wooden marking post for the yard, similar to a small fire-hydrant-shaped garden post",
+    "detalhe_en": "A single vertical cylindrical or square wooden post fixed into a wide flat round base plate for freestanding stability in a lawn, plain smooth surface, no other features, simple sturdy post form."
+  }
+]

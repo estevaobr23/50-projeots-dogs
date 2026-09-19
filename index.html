@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>50 Projetos de Móveis para Cães — Escolha, corte, monte e venda</title>
+<meta name="description" content="50 projetos de marcenaria para cães com ficha técnica visual: medidas, relação de peças, lógica de corte e passo a passo de montagem. Para o marceneiro que quer ampliar o catálogo sem desenhar nada do zero." />
+
+<!-- Pixel Utmify -->
+<script>
+  window.pixelId = "6aadf7271ebd79bb3000011a";
+  var a = document.createElement("script");
+  a.setAttribute("async",""); a.setAttribute("defer","");
+  a.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,600&family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+
+<style>
+/* ============================================================
+   TOKENS — paleta do catálogo de cães: grafite/carvão neutro como
+   superfície de autoridade (oficina), e dois accents vivos tirados da
+   bancada real — ocre de madeira crua (accent 1) e âmbar tostado
+   (accent 2). Deliberadamente distinta do laranja do catálogo de gatos,
+   para os dois produtos não se confundirem no feed.
+   Regra v2: dourado só sobrevive em fundo escuro.
+   ============================================================ */
+:root{
+  /* Primária — grafite/carvão neutro (fundo das seções escuras, autoridade
+     de oficina técnica — o mesmo papel visual do --texto #111827 da área
+     de membros, só que como superfície grande em vez de texto) */
+  --primary:        hsl(222, 20%, 14%);
+  --primary-dark:   hsl(224, 24%, 9%);
+  --primary-light:  hsl(220, 16%, 24%);
+  --primary-soft:   hsl(210, 30%, 96%);
+
+  /* Accent vivo 1 — ocre de madeira crua:
+     eyebrows, chips, bordas ativas, réguas, CTA de destaque */
+  --coral:          hsl(36, 86%, 46%);
+  --coral-dark:     hsl(30, 82%, 33%);
+  --coral-light:    hsl(40, 92%, 60%);
+  --coral-soft:     hsl(40, 100%, 95%);
+
+  /* Accent vivo 2 — âmbar tostado: citações, apoio, segundo destaque */
+  --leaf:           hsl(28, 78%, 42%);
+  --leaf-dark:      hsl(24, 72%, 30%);
+  --leaf-soft:      hsl(34, 86%, 95%);
+
+  /* Tom claro ANÁLOGO ao accent — grifos sobre fundo escuro */
+  --mint:           hsl(38, 92%, 68%);
+
+  /* Semânticos */
+  --strike:         hsl(348, 76%, 46%);
+  --deny:           hsl(354, 76%, 50%);
+  --buy:            hsl(142, 84%, 43%);
+  --buy-dark:       #06a742;
+  --success:        hsl(142, 90%, 34%);
+
+  /* Dourado do CTA final — RESTRITO a fundo escuro (aqui, laranja quente) */
+  --gold:           hsl(36, 90%, 54%);
+  --gold-light:     hsl(40, 94%, 70%);
+
+  /* Neutros dessaturados — cinza-azulado (o --fundo-alt #e8eef3 da área de
+     membros), não mais bege quente */
+  --bg-marfim:      hsl(210, 24%, 97%);
+  --bg-marfim-deep: hsl(210, 20%, 94%);
+  --text-dark:      hsl(222, 30%, 12%);
+  --text-body:      hsl(222, 14%, 28%);
+  --text-muted:     hsl(220, 10%, 45%);
+  --white:          #ffffff;
+  --border:         hsl(214, 18%, 86%);
+
+  --container: 980px;
+  --container-narrow: 760px;
+  --radius-sm: 10px;  --radius-md: 18px;
+  --radius-lg: 26px;  --radius-pill: 999px;
+
+  --shadow-subtle: 0 4px 18px  hsla(222,30%,14%,.08);
+  --shadow-medium: 0 14px 40px hsla(222,30%,12%,.14);
+  --shadow-large:  0 30px 70px hsla(222,35%,10%,.22);
+  --shadow-gold:   0 12px 34px hsla(28,80%,42%,.28);
+
+  --transition: .4s cubic-bezier(.2,.7,.3,1);
+
+  --font-body:    'Inter', system-ui, sans-serif;
+  --font-display: 'Sora', system-ui, sans-serif;
+  --font-num:     'Outfit', sans-serif;
+  --font-serif:   'Barlow Condensed', sans-serif;
+
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+}
+
+/* ===== Base ===== */
+*{ margin:0; padding:0; box-sizing:border-box; }
+html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+body{ font-family:var(--font-body); color:var(--text-body);
+      background:var(--bg-marfim); line-height:1.65; overflow-x:hidden; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+.container{ width:100%; max-width:var(--container); margin:0 auto; padding:0 22px; }
+.narrow{ max-width:var(--container-narrow); }
+section{ padding:84px 0; position:relative; }
+
+/* ===== section-head ===== */
+.section-head{ text-align:center; max-width:640px; margin:0 auto 52px; }
+.section-head .eyebrow{
+  display:inline-block; font-family:var(--font-num); font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; font-size:.76rem;
+  color:var(--coral-dark); margin-bottom:14px;
+}
+.section-head h2{
+  font-family:var(--font-display); font-weight:800;
+  font-size:clamp(1.6rem, 4.3vw, 2.45rem); line-height:1.18;
+  color:var(--text-dark); letter-spacing:-.02em;
+}
+.section-head h2 .hl{ color:var(--primary); font-style:italic; }
+.section-head .rule{
+  width:74px; height:3px; margin:20px auto 0;
+  background:linear-gradient(90deg,var(--coral),var(--leaf));
+  border-radius:99px;
+}
+.section-head p{ margin-top:18px; color:var(--text-muted); font-size:1.06rem; }
+.dark-head .eyebrow{ color:var(--gold-light); }
+.dark-head h2{ color:#fff; }
+.dark-head h2 .hl{ color:var(--gold-light); }
+.dark-head p{ color:hsl(38,25%,86%); }
+
+/* ===== Botões ===== */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:.55em;
+  font-family:var(--font-num); font-weight:700; font-size:1.06rem;
+  color:#fff; background:linear-gradient(135deg,var(--primary-light),var(--primary-dark));
+  padding:18px 34px; border-radius:var(--radius-pill); border:none; cursor:pointer;
+  box-shadow:var(--shadow-medium); transition:var(--transition); text-align:center;
+}
+.btn:hover{ transform:translateY(-3px); box-shadow:var(--shadow-large); }
+.btn .arrow{ transition:transform .3s; }
+.btn:hover .arrow{ transform:translateX(4px); }
+.btn-gold{ background:linear-gradient(135deg,var(--gold-light),var(--gold));
+           color:var(--primary-dark); box-shadow:var(--shadow-gold); }
+.btn-buy{ background:linear-gradient(135deg,#12c74e,var(--buy-dark)); color:#fff;
+          box-shadow:0 14px 34px hsla(145,90%,30%,.34); animation:pulse 2.4s infinite; }
+.btn-ghost{ background:transparent; color:var(--primary);
+            border:2px solid var(--border); box-shadow:none; font-weight:600; }
+.btn-lg{ padding:21px 42px; font-size:1.12rem; }
+.btn-block{ width:100%; }
+@keyframes pulse{
+  0%  { box-shadow:0 14px 34px hsla(145,90%,30%,.34), 0 0 0 0    hsla(145,80%,40%,.4); }
+  70% { box-shadow:0 14px 34px hsla(145,90%,30%,.34), 0 0 0 16px hsla(145,80%,40%,0); }
+  100%{ box-shadow:0 14px 34px hsla(145,90%,30%,.34), 0 0 0 0    hsla(145,80%,40%,0); }
+}
+
+/* ===== 0. Topbar ===== */
+.topbar{
+  background:
+    radial-gradient(700px 120px at 50% 0%, hsl(222,30%,22%), transparent 65%),
+    linear-gradient(90deg,hsl(222,26%,8%),hsl(222,22%,13%),hsl(222,26%,8%));
+  color:var(--gold-light); overflow:hidden; padding:11px 0; position:relative;
+}
+.topbar::before,.topbar::after{ content:""; position:absolute; top:0; bottom:0;
+  width:8%; z-index:2; pointer-events:none; }
+.topbar::before{ left:0;  background:linear-gradient(90deg,hsl(222,26%,8%),transparent); }
+.topbar::after { right:0; background:linear-gradient(270deg,hsl(222,26%,8%),transparent); }
+.topbar-track{ display:flex; width:max-content; animation:topbar-scroll 32s linear infinite; }
+.topbar:hover .topbar-track{ animation-play-state:paused; }
+.topbar-seq{ display:flex; align-items:center; flex:none;
+  font-family:var(--font-num); font-weight:700; font-size:.82rem; letter-spacing:.04em; }
+.tb-item{ padding:0 22px; white-space:nowrap; }
+.tb-star{ color:var(--gold); opacity:.65; font-size:.78rem; }
+@keyframes topbar-scroll{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ===== 1. Hero ===== */
+.hero{
+  background:
+    radial-gradient(1100px 560px at 50% -12%, hsl(222,28%,20%), transparent 62%),
+    radial-gradient(760px 460px at 88% 6%, hsla(33,62%,42%,.30), transparent 60%),
+    linear-gradient(180deg, hsl(222,24%,14%), hsl(222,26%,9%));
+  color:#fff; padding:62px 0 84px; overflow:hidden;
+}
+.hero-stack{ display:flex; flex-direction:column; align-items:center;
+             text-align:center; max-width:920px; margin:0 auto; }
+.hero h1{ font-family:var(--font-display); font-weight:800;
+  font-size:clamp(1.4rem, 4.4vw, 2.5rem); line-height:1.42;
+  color:#fff; letter-spacing:-.03em; text-wrap:pretty; }
+.hero h1 .hl-block{
+  background:linear-gradient(135deg, var(--buy), var(--buy-dark));
+  color:#fff; padding:.06em .3em; border-radius:7px;
+  white-space:nowrap;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;
+  box-shadow:inset 0 1px 0 hsla(0,0%,100%,.22);
+}
+.hero h1 .br-d{ display:none; }
+@media (min-width:900px){ .hero h1 .br-d{ display:inline; } }
+.hero p.sub{ margin-top:24px; font-family:var(--font-display); font-weight:400;
+  font-size:1.06rem; line-height:1.62; color:#fff; max-width:680px; }
+.hero p.sub b{ color:#fff; font-weight:700; }
+
+.book-stage{ position:relative; display:flex; justify-content:center;
+             align-items:center; margin-top:20px; width:100%; }
+.book-glow{ position:absolute; width:86%; height:74%;
+  background:radial-gradient(circle,hsla(33,80%,55%,.45),transparent 66%);
+  filter:blur(46px); opacity:.6; z-index:0; }
+.hero-mockup{ position:relative; z-index:1; width:100%; max-width:680px; height:auto;
+  filter:drop-shadow(0 30px 55px hsla(222,40%,4%,.55)); }
+
+.hero-trust{ display:flex; gap:10px; flex-wrap:nowrap; justify-content:center; margin-top:34px; }
+.hero-trust span{ display:inline-flex; align-items:center; gap:.45em;
+  font-family:var(--font-num); font-weight:700; font-size:.82rem; white-space:nowrap;
+  color:hsl(36,60%,96%);
+  background:hsla(0,0%,100%,.09); border:1px solid hsla(36,60%,70%,.3);
+  padding:9px 16px; border-radius:10px; }
+
+.hero-delivery{ font-size:.94rem; font-weight:600; line-height:1.8;
+  color:hsl(36,50%,95%); text-align:center; max-width:360px; margin:22px auto 0; }
+.hero-delivery b{ color:#fff; font-weight:700; }
+.hero-delivery .nowrap{ white-space:nowrap; }
+.hero-delivery-ic{ display:inline-block; width:20px; height:20px; vertical-align:-5px; margin-right:3px; }
+
+.hero-cta{ margin-top:18px; }
+.hero-social{ margin-top:26px; display:flex; flex-direction:column; align-items:center; gap:10px; }
+.hero-social-avatars{ display:flex; }
+.hero-social-avatars img{ width:38px; height:38px; border-radius:50%; object-fit:cover;
+  border:2px solid hsl(222,26%,9%); margin-left:-10px; background:#171d29; }
+.hero-social-avatars img:first-child{ margin-left:0; }
+.hero-social-label{ font-family:var(--font-num); font-weight:800; font-size:.9rem;
+  letter-spacing:.03em; color:var(--gold-light); text-transform:uppercase; }
+
+/* ===== 2. Vitrine ===== */
+.vitrine{ background:var(--white); }
+.grid-desire{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+
+/* ===== 2b. Cards de projeto — página real da ficha técnica + selo de porte =====
+   O que vende aqui é a FICHA TÉCNICA pronta pra bancada, não a novidade
+   tecnológica: o catálogo irmão já provou que atração tecnológica não
+   converte neste público. Por isso o card de destaque mostra a PÁGINA da
+   ficha (medidas, peças, montagem) — as fotos de móvel+cão em uso ficam
+   reservadas só para o carrossel lifestyle logo abaixo (regra 9.3 da
+   skill: aqui é prova técnica, lá é prova de amplitude/desejo). Palco em
+   retrato (proporção A4, ~0.72) porque a ficha é um documento vertical —
+   forçar em paisagem espremia o conteúdo e sobrava fundo branco. */
+.grid-desire--proj{ grid-template-columns:repeat(3,1fr); }
+.proj-card{
+  background:var(--bg-marfim); border:1px solid var(--border);
+  border-radius:var(--radius-md); padding:0 26px 30px;
+  transition:var(--transition); position:relative; overflow:hidden;
+}
+.proj-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow-medium); }
+.proj-stage{
+  position:relative; width:calc(100% + 52px); margin:0 -26px 22px;
+  aspect-ratio:0.72; background:#fff; border-bottom:1px solid var(--border);
+  overflow:hidden;
+}
+.proj-thumb{ position:absolute; inset:0; width:100%; height:100%;
+             object-fit:cover; object-position:top; background:#fff; }
+.proj-porte{
+  position:absolute; top:12px; left:12px; z-index:2;
+  font-family:var(--font-num); font-weight:800; font-size:.78rem;
+  letter-spacing:.08em; text-transform:uppercase; color:#fff;
+  background:var(--coral-dark); padding:5px 11px;
+  border-radius:var(--radius-pill); box-shadow:var(--shadow-subtle);
+}
+.proj-card .verse{
+  font-family:var(--font-num); font-weight:800; font-size:.78rem;
+  color:var(--coral-dark); letter-spacing:.08em; text-transform:uppercase;
+  margin:22px 0 12px; display:block;
+}
+.proj-card h3{ font-family:var(--font-display); font-weight:700; font-size:1.16rem;
+               color:var(--primary); margin-bottom:10px; line-height:1.3; }
+.proj-card p{ font-family:var(--font-serif); font-size:1.14rem; line-height:1.45; }
+
+.vitrine-cta{ margin-top:44px; text-align:center; }
+
+.desire-strip{
+  --scroll: 0;
+  margin-top:48px; max-width:720px; margin-inline:auto; text-align:center;
+  position:relative; isolation:isolate; border-radius:var(--radius-lg); padding:40px 48px;
+  background:
+    radial-gradient(760px 240px at 50% -40%, hsla(38,62%,52%,.28), transparent 72%),
+    linear-gradient(150deg, var(--primary-light), var(--primary-dark) 78%);
+  box-shadow:var(--shadow-large), inset 0 1px 0 hsla(41,60%,80%,.14);
+  overflow:hidden;
+}
+.desire-strip::before{
+  content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit; padding:14px;
+  background:radial-gradient(circle, hsla(41,72%,72%,.9) 1.6px, transparent 2px) 0 0 / 13px 13px;
+  -webkit-mask:linear-gradient(#000 0 0) padding-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor; mask-composite:exclude;
+  -webkit-mask-clip:padding-box, border-box;
+  opacity:.55; background-position: calc(var(--scroll) * 13px) center;
+}
+.desire-strip::after{
+  content:""; position:absolute; inset:0; z-index:-1; border-radius:inherit;
+  background:radial-gradient(420px 300px at calc(var(--scroll) * 130% - 15%) 40%,
+             hsla(41,85%,74%,.22), transparent 62%);
+  pointer-events:none; transition:background .1s linear;
+}
+.desire-strip .ds-icon{ display:block; font-size:1.5rem; color:var(--gold-light);
+  opacity:.85; margin-bottom:10px; letter-spacing:.3em; }
+.desire-strip .ds-text{ font-family:var(--font-serif); font-size:1.5rem;
+  line-height:1.45; color:#fdf3e6; }
+.desire-strip strong{ color:var(--gold-light); }
+.desire-strip .ds-underline{ position:relative; color:#fff; white-space:nowrap; }
+.desire-strip .ds-underline::after{
+  content:""; position:absolute; left:0; right:0; bottom:-4px; height:3px;
+  border-radius:99px; transform-origin:left center; transform:scaleX(var(--scroll));
+  background:linear-gradient(90deg, var(--gold-light), var(--gold));
+  box-shadow:0 0 12px hsla(41,80%,65%,.6);
+}
+
+/* ===== 3. Comparativo ===== */
+.compare{ background:linear-gradient(180deg,var(--bg-marfim),var(--bg-marfim-deep)); }
+.compare-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:stretch; }
+.compare-col{ background:#fff; border-radius:var(--radius-lg); padding:34px 30px;
+              border:1px solid var(--border); box-shadow:var(--shadow-subtle);
+              position:relative; isolation:isolate; overflow:hidden; }
+.compare-col.bad{ background:hsl(214,16%,97%); border-color:hsl(214,16%,88%); }
+.compare-col.good{
+  background:
+    radial-gradient(120% 90% at 85% -10%, hsla(38,60%,55%,.22), transparent 55%),
+    linear-gradient(158deg, var(--primary-light) -20%, var(--primary) 42%, var(--primary-dark) 105%);
+  color:#fff; border:1px solid hsla(38,70%,68%,.28);
+  box-shadow:var(--shadow-large); }
+.compare-col .tag{ display:inline-flex; align-items:center; gap:.4em;
+  font-family:var(--font-num); font-weight:700; font-size:.76rem; letter-spacing:.1em;
+  text-transform:uppercase; padding:6px 14px; border-radius:var(--radius-pill); margin-bottom:8px; }
+.bad .tag{ background:hsl(214,18%,92%); color:var(--text-muted); }
+.good .tag{ background:var(--coral-dark); color:#fff; }
+.compare-col h3{ font-family:var(--font-display); font-weight:700; font-size:1.2rem;
+  margin:8px 0 20px; line-height:1.35; }
+.bad h3{ color:var(--text-dark); }
+.good h3{ color:#fff; }
+.compare-col ul{ list-style:none; display:flex; flex-direction:column; gap:15px; }
+.compare-col li{ display:flex; gap:12px; align-items:flex-start; font-size:1rem; line-height:1.5; }
+.compare-col li .ic{ flex:none; width:24px; height:24px; border-radius:50%;
+  display:grid; place-items:center; font-weight:800; font-size:.85rem; margin-top:2px; }
+.bad  li .ic{ background:#fff; border:2px solid hsl(214,14%,82%); color:hsl(214,8%,52%); }
+.good li .ic{ background:var(--buy-dark); border:2px solid var(--buy-dark); color:#fff;
+              box-shadow:0 2px 10px hsla(142,93%,24%,.45); }
+.good li b{
+  color:var(--mint); font-weight:700;
+  text-decoration:underline; text-decoration-color:hsla(24,90%,70%,.5);
+  text-decoration-thickness:2px; text-underline-offset:3px;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone;
+}
+.compare-col::before{ content:""; position:absolute; inset:0; z-index:-1;
+  pointer-events:none; background-image:var(--grain); background-size:220px 220px; }
+.compare-col.bad::before{ opacity:.1;  mix-blend-mode:multiply; }
+.compare-col.good::before{ opacity:.45; mix-blend-mode:soft-light; }
+
+/* ===== 4. Veja por dentro ===== */
+.inside{ background:var(--white); }
+
+/* Carrossel horizontal de nomes de projeto — mesma engine do .page-marquee
+   logo abaixo (mask nas bordas + track duplicado que desliza sozinho).
+   Substitui o antigo card estático de flipbook e a lista fixa em grade:
+   aqui os badges sangram pra fora do container e rolam em loop. */
+.cat-marquee{ display:flex; flex-direction:column; gap:12px; margin-bottom:0; }
+.cat-row{ overflow-x:clip; overflow-y:visible;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+.cat-track{ display:flex; gap:10px; width:max-content; will-change:transform; padding:6px 0; }
+.cat-track.cat-left { animation:pm-scroll-left  46s linear infinite; }
+.cat-track.cat-right{ animation:pm-scroll-right 46s linear infinite; }
+.cat-marquee:hover .cat-track{ animation-play-state:paused; }
+.cat-badge{
+  display:inline-flex; align-items:center; flex:none; white-space:nowrap;
+  font-family:var(--font-num); font-weight:600; font-size:.86rem;
+  color:var(--text-body); background:var(--bg-marfim); border:1px solid var(--border);
+  padding:8px 15px; border-radius:var(--radius-pill);
+  box-shadow:var(--shadow-subtle);
+}
+/* destaque: gradiente ocre claro → escuro, para os projetos que aparecem
+   como card na vitrine (seção 2, acima) — dá âncora visual entre as duas
+   seções sem repetir a imagem */
+.cat-badge--destaque{
+  font-weight:800; color:#fff; border-color:transparent;
+  background:linear-gradient(135deg,var(--coral-light),var(--coral-dark));
+  box-shadow:0 8px 20px hsla(36,80%,40%,.28);
+}
+
+/* Carrossel das fichas técnicas em PDF — mesma engine do .page-marquee,
+   mas com imagens em proporção vertical (A4) pois são páginas de ficha
+   técnica reais, não fotos lifestyle 4x3. */
+.ficha-marquee{ display:flex; flex-direction:column; gap:10px; margin-bottom:44px; }
+.fm-row{ overflow-x:clip; overflow-y:visible;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+.fm-track{ display:flex; gap:22px; width:max-content; will-change:transform; padding:14px 0; }
+.fm-left { animation:pm-scroll-left  32s linear infinite; }
+.fm-right{ animation:pm-scroll-right 32s linear infinite; }
+.ficha-marquee:hover .fm-track{ animation-play-state:paused; }
+.fm-img{ display:block; height:380px; width:auto; flex:none;
+  border-radius:var(--radius-md); border:1px solid var(--border);
+  box-shadow:0 10px 26px hsla(222,25%,15%,.16); object-fit:contain; background:#fff; }
+
+.ebook-preview{ margin:0 0 44px; text-align:center; }
+.ebook-preview .ep-chip{
+  display:inline-flex; align-items:center; gap:8px; font-family:var(--font-num);
+  font-weight:700; font-size:.82rem; letter-spacing:.02em; text-transform:uppercase;
+  color:var(--coral-dark); background:hsla(21,90%,48%,.1); border:1px solid hsla(21,90%,48%,.25);
+  padding:8px 16px; border-radius:var(--radius-pill); margin-bottom:18px;
+}
+.ebook-preview .ep-frame{
+  max-width:420px; margin:0 auto; border-radius:var(--radius-lg);
+  border:1px solid var(--border); box-shadow:var(--shadow-large);
+  overflow:hidden; background:#fff;
+}
+.ebook-preview .ep-frame img{ display:block; width:100%; height:auto; }
+.ebook-preview .ep-frame--flip{
+  max-width:420px; aspect-ratio:0.7067; width:100%;
+}
+.ebook-preview .ep-frame--flip iframe{
+  display:block; width:100%; height:100%; border:0;
+}
+@media (max-width:560px){
+  .ebook-preview .ep-frame--flip{ max-width:100%; }
+}
+.ebook-preview .ep-caption{ margin-top:14px; font-size:.92rem; color:var(--text-muted); }
+
+.page-marquee{ display:flex; flex-direction:column; gap:10px; }
+.pm-row{ overflow-x:clip; overflow-y:visible;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent); }
+.pm-track{ display:flex; gap:26px; width:max-content; will-change:transform; padding:14px 0; }
+.pm-left { animation:pm-scroll-left  34s linear infinite; }
+.pm-right{ animation:pm-scroll-right 34s linear infinite; }
+.pm-slow { animation-duration:42s; }
+.page-marquee:hover .pm-track{ animation-play-state:paused; }
+.pm-img{ display:block; height:300px; width:auto; flex:none;
+  border-radius:var(--radius-md); border:1px solid var(--border);
+  box-shadow:0 6px 18px hsla(222,25%,15%,.12); object-fit:contain; background:#fffdf8; }
+
+/* ===== Feeds de demonstração e fichas ===== */
+.page-marquee,.ficha-marquee{ display:none; }
+.feed-panel{ margin-top:28px; }
+.feed-toolbar{ display:flex; align-items:center; justify-content:space-between; gap:18px;
+  flex-wrap:wrap; margin:0 0 22px; padding:14px 16px; border:1px solid var(--border);
+  border-radius:var(--radius-md); background:var(--white); box-shadow:var(--shadow-subtle); }
+.feed-toolbar p{ font-size:.92rem; color:var(--text-muted); }
+.feed-toolbar b{ color:var(--primary); }
+.feed-switch{ display:inline-flex; gap:7px; padding:4px; background:var(--bg-marfim-deep);
+  border-radius:var(--radius-pill); }
+.feed-switch button{ min-width:42px; border:0; border-radius:var(--radius-pill); padding:8px 11px;
+  font-family:var(--font-num); font-weight:800; color:var(--text-muted); background:transparent; cursor:pointer; }
+.feed-switch button[aria-pressed="true"]{ color:#fff; background:var(--primary); box-shadow:0 3px 9px hsla(222,30%,12%,.2); }
+.feed-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+.feed-grid[data-columns="1"]{ grid-template-columns:1fr; }
+.feed-card{ overflow:hidden; position:relative; background:#fff; border:1px solid var(--border);
+  border-radius:var(--radius-md); box-shadow:var(--shadow-subtle); }
+.feed-card img{ width:100%; height:auto; aspect-ratio:3/4; object-fit:contain; background:#fff; }
+.feed-card__caption{ display:flex; align-items:center; gap:10px; padding:11px 13px;
+  border-top:1px solid var(--border); color:var(--text-dark); font-family:var(--font-num); font-weight:800; line-height:1.25; }
+.feed-card__number{ display:grid; place-items:center; width:30px; height:30px; flex:none;
+  border-radius:50%; color:#fff; background:var(--coral-dark); font-size:.76rem; }
+.context-feed .feed-card img{ aspect-ratio:3/4; object-fit:cover; }
+.context-feed .feed-card__caption{ color:var(--primary); }
+.context-feed .feed-card{ transition:transform var(--transition),box-shadow var(--transition); }
+.context-feed .feed-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-medium); }
+@media (max-width:560px){
+  .feed-grid,.feed-grid[data-columns="1"]{ grid-template-columns:1fr; }
+  .feed-toolbar{ align-items:flex-start; }
+}
+@keyframes pm-scroll-left { from{transform:translateX(0)}    to{transform:translateX(-50%)} }
+@keyframes pm-scroll-right{ from{transform:translateX(-50%)} to{transform:translateX(0)} }
+
+.mid-cta{ margin-top:48px; text-align:center;
+  background:
+    radial-gradient(130% 110% at 50% -25%, hsl(222,25%,18%), transparent 62%),
+    linear-gradient(160deg, var(--primary), var(--primary-dark));
+  border:1px solid hsla(222,30%,50%,.2);
+  border-radius:var(--radius-lg); padding:38px 32px 32px;
+  box-shadow:var(--shadow-large); position:relative; isolation:isolate; }
+.mc-chip{ display:inline-flex; align-items:center; gap:.5em;
+  font-family:var(--font-num); font-weight:700; font-size:.76rem;
+  letter-spacing:.12em; text-transform:uppercase;
+  background:var(--coral-dark); color:#fff;
+  padding:7px 16px; border-radius:var(--radius-pill); margin-bottom:20px; }
+.mid-cta .mc-title{ font-family:var(--font-num); font-weight:600;
+  font-size:clamp(1.1rem, 2.9vw, 1.4rem); line-height:1.4; color:#fff;
+  letter-spacing:-.015em; max-width:30ch; margin:0 auto; }
+.mid-cta .mc-title strong{ color:#fff; font-weight:800; }
+.mid-cta .small{ font-family:var(--font-num); font-weight:500; font-size:.92rem;
+  color:hsla(0,0%,100%,.8); margin:12px 0 24px; }
+.mid-cta .btn{ background:#0fbf4b; color:#fff;
+  box-shadow:0 12px 32px hsla(142,88%,16%,.5); }
+.mid-cta .btn:hover{ background:#0dad43; }
+.mc-facts{ display:flex; flex-wrap:wrap; justify-content:center; gap:8px 22px;
+  margin-top:26px; padding-top:20px; border-top:1px solid hsla(0,0%,100%,.14);
+  font-family:var(--font-num); font-weight:500; font-size:.82rem;
+  color:hsla(0,0%,100%,.7); }
+.mc-facts b{ color:var(--mint); font-weight:800; }
+
+/* ===== 6. Bônus ===== */
+.bonus{ background:linear-gradient(160deg,var(--primary-dark),var(--primary)); color:#fff; }
+.grid-bonus{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:68px 22px; max-width:760px; margin-inline:auto; padding-top:56px; }
+.bonus-card{ background:#fff; border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:52px 26px 28px;
+  display:flex; flex-direction:column; box-shadow:var(--shadow-medium);
+  transition:var(--transition); position:relative; isolation:isolate; }
+.bonus-card:hover{ transform:translateY(-8px); box-shadow:var(--shadow-large);
+                   border-color:var(--gold); }
+.bonus-card .cover{ aspect-ratio:16/10; margin:-38px 0 10px;
+  background:transparent; border:none; box-shadow:none; overflow:visible;
+  display:grid; place-items:center; }
+.bonus-card .cover img{ width:112%; max-width:none; height:auto; object-fit:contain;
+  filter:drop-shadow(0 18px 26px hsla(222,30%,10%,.32));
+  transition:transform .45s cubic-bezier(.2,.7,.3,1); }
+.bonus-card:hover .cover img{ transform:translateY(-6px) scale(1.04); }
+.bonus-card h3{ font-family:var(--font-serif); font-weight:700; font-size:1.5rem;
+                color:var(--primary); margin-bottom:8px; line-height:1.2; }
+.bonus-card p{ font-size:.96rem; line-height:1.5; flex:1; color:var(--text-body); }
+.bonus-price{ margin-top:18px; padding-top:16px; border-top:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.bonus-price s{ color:hsl(0,72%,50%); font-size:.95rem; font-weight:600; }
+.bonus-price .free{ font-family:var(--font-num); font-weight:800; font-size:.82rem;
+  color:#fff; background:linear-gradient(135deg,#12c74e,var(--buy-dark));
+  padding:5px 12px; border-radius:var(--radius-pill); white-space:nowrap;
+  box-shadow:0 8px 20px hsla(145,90%,30%,.28); }
+
+.bonus-final{ margin-top:54px; max-width:640px; margin-inline:auto; text-align:center;
+  position:relative; isolation:isolate; border-radius:var(--radius-lg); padding:40px 34px 38px;
+  background:#fff; border:1px solid var(--border); box-shadow:var(--shadow-large);
+  overflow:hidden; }
+.bonus-final::after{ content:""; position:absolute; top:0; bottom:0; left:-60%;
+  width:45%; z-index:-1;
+  background:linear-gradient(100deg, transparent, hsla(145,60%,75%,.12), transparent);
+  transform:skewX(-18deg); animation:bonus-shine 5.5s ease-in-out infinite; }
+@keyframes bonus-shine{ 0%,60%{left:-60%} 100%{left:130%} }
+.bonus-final-badge{ display:inline-flex; align-items:center; gap:.5em;
+  font-family:var(--font-num); font-weight:800; font-size:.78rem;
+  text-transform:uppercase; color:#fff;
+  background:linear-gradient(135deg,var(--primary-light),var(--primary-dark));
+  padding:7px 16px; border-radius:var(--radius-pill); margin-bottom:18px;
+  box-shadow:var(--shadow-medium); animation:badge-bob 2.6s ease-in-out infinite; }
+@keyframes badge-bob{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+.bonus-sum{ font-family:var(--font-serif); font-size:1.55rem; line-height:1.4;
+            color:var(--text-dark); margin:0 0 26px; }
+.bonus-sum .was{ color:hsl(0,72%,50%); font-weight:600; text-decoration-thickness:2px; }
+.bonus-sum strong{ color:var(--buy-dark); font-weight:700; }
+.bonus-final-note{ display:block; margin-top:16px; font-size:.86rem; color:var(--text-muted); }
+
+/* ===== 7. Depoimentos ===== */
+.testi{ background:var(--white); }
+.grid-testi{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+.testi-card{ background:var(--bg-marfim); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:34px 28px; transition:var(--transition);
+  display:flex; flex-direction:column; align-items:center; text-align:center;
+  position:relative; isolation:isolate; }
+.testi-card:hover{ transform:translateY(-5px); box-shadow:var(--shadow-medium); }
+.testi-head{ display:flex; flex-direction:column; align-items:center; gap:4px; margin-bottom:16px; }
+.testi-head .avatar{ width:82px; height:82px; border-radius:50%; object-fit:cover;
+  border:3px solid #fff; box-shadow:0 4px 14px hsla(222,25%,20%,.16); margin-bottom:12px; }
+.testi-head .name{ font-family:var(--font-num); font-weight:700; color:var(--text-dark); }
+.testi-head .meta{ font-size:.85rem; color:var(--text-muted); }
+.testi-head .verified{ color:var(--success); font-weight:700; }
+.testi-card .stars{ color:#f2a800; letter-spacing:2px; margin:6px 0 16px; }
+.testi-card .quote{ font-size:.98rem; line-height:1.6; }
+.testi-card .quote strong{ color:var(--text-dark); font-weight:700;
+  text-decoration:underline; text-decoration-color:hsla(33,62%,52%,.55);
+  text-decoration-thickness:2px; text-underline-offset:3px;
+  -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+
+/* ===== 8. Oferta ===== */
+.offer{ background:linear-gradient(160deg,hsl(222,28%,18%),hsl(222,28%,9%)); }
+.offer-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:26px; align-items:stretch; }
+.plan{ background:#fff; border:1px solid var(--border); border-radius:var(--radius-lg);
+  padding:34px 30px; display:flex; flex-direction:column; box-shadow:var(--shadow-subtle);
+  position:relative; isolation:isolate; }
+.plan h3{ font-family:var(--font-display); font-weight:700; font-size:1.24rem;
+  color:var(--text-dark); }
+.plan .psub{ font-size:.92rem; margin-top:4px; color:var(--text-muted); }
+.plan.basic{ background:hsla(0,0%,100%,.07); border-color:hsla(214,30%,85%,.2);
+  box-shadow:none; backdrop-filter:blur(2px); }
+.plan.basic h3, .plan.basic .price{ color:#fff; }
+.plan.basic .psub{ color:hsla(214,20%,92%,.75); }
+.plan.basic li{ color:hsla(214,20%,95%,.9); }
+.plan.basic li.no{ color:hsla(214,18%,93%,.62); }
+.plan.basic li.no .ic{ background:var(--deny); border:2px solid var(--deny); color:#fff;
+                       box-shadow:0 2px 8px hsla(354,76%,32%,.4); }
+.plan.basic .btn-ghost{ color:#fff; border-color:hsla(214,30%,88%,.35); }
+.plan.vip{ border:2px solid var(--coral); box-shadow:var(--shadow-large);
+  background:#fff; padding-top:46px; text-align:center; }
+.plan.vip .ribbon{ position:absolute; top:0; left:50%; transform:translate(-50%,-50%);
+  display:inline-flex; align-items:center; gap:.4em; white-space:nowrap;
+  background:linear-gradient(90deg,var(--coral-dark),hsl(6,74%,30%)); color:#fff;
+  font-family:var(--font-num); font-weight:800; font-size:.76rem; letter-spacing:.08em;
+  text-transform:uppercase; padding:9px 22px; border-radius:var(--radius-pill);
+  box-shadow:var(--shadow-medium); }
+.plan.vip .plan-mockup{ display:block; width:100%; max-width:420px; margin:6px auto 20px; }
+.plan.vip .price-row{ display:flex; flex-direction:column; align-items:center; gap:2px; }
+.plan.vip .anchor{ color:var(--text-muted); font-size:1.05rem; }
+.plan.vip .anchor s{ color:var(--strike); font-weight:700; }
+.plan.vip .price{ color:var(--buy-dark); font-size:3rem; }
+.plan.vip .installment{ font-family:var(--font-num); font-weight:600; color:#0d1512;
+  font-size:.98rem; margin-top:6px; }
+.plan.vip .installment b{ color:var(--buy-dark); font-weight:800; }
+.plan.vip ul{ text-align:left; }
+.plan .price{ font-family:var(--font-num); font-weight:800; font-size:2.4rem;
+              line-height:1; margin:14px 0 4px; }
+.plan ul{ list-style:none; display:flex; flex-direction:column; gap:12px; margin:22px 0; flex:1; }
+.plan li{ display:flex; gap:11px; align-items:flex-start; font-size:.98rem; line-height:1.45; }
+.plan li .ic{ flex:none; width:22px; height:22px; border-radius:50%;
+              display:grid; place-items:center; font-size:.78rem; font-weight:800; margin-top:2px; }
+.plan li.yes .ic{ background:var(--buy-dark); border:2px solid var(--buy-dark); color:#fff;
+                  box-shadow:0 2px 8px hsla(142,93%,24%,.35); }
+.plan li.no{ color:var(--text-muted); }
+.plan li.no .ic{ background:#fff; border:2px solid var(--border); color:hsl(214,8%,55%); }
+.offer-secure{ margin-top:16px; text-align:center; font-size:.85rem; color:var(--text-muted);
+  display:flex; justify-content:center; gap:8px; flex-wrap:wrap; }
+
+/* ===== 9. Garantia ===== */
+.guarantee{ background:var(--white); }
+.guarantee-box{ max-width:720px; margin:0 auto; text-align:center;
+  background:linear-gradient(160deg,var(--leaf-soft),#ffffff);
+  border:1px solid var(--border); border-radius:var(--radius-lg); padding:48px 40px;
+  position:relative; isolation:isolate; }
+.seal-days-img{ width:250px; height:250px; max-width:80%; margin:0 auto 24px;
+  display:block; object-fit:contain; filter:drop-shadow(var(--shadow-medium)); }
+.guarantee-box h2{ font-family:var(--font-display); font-weight:800; font-size:1.6rem;
+                   color:var(--text-dark); margin-bottom:14px; }
+.guarantee-box p strong{ color:var(--primary); }
+
+/* ===== 10. FAQ ===== */
+.faq{ background:linear-gradient(180deg,var(--bg-marfim),var(--white)); }
+.faq-list{ max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:14px; }
+.faq-item{ background:#fff; border:1px solid var(--border);
+  border-radius:var(--radius-md); overflow:hidden; transition:var(--transition); }
+.faq-item[open]{ box-shadow:var(--shadow-subtle); border-color:var(--coral); }
+.faq-item summary{ list-style:none; cursor:pointer; padding:22px 26px;
+  font-family:var(--font-num); font-weight:700; color:var(--text-dark);
+  display:flex; justify-content:space-between; align-items:center; gap:16px; }
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary .plus{ flex:none; color:var(--coral-dark); font-size:1.5rem;
+                         transition:transform .3s; line-height:1; }
+.faq-item[open] summary .plus{ transform:rotate(45deg); }
+.faq-item .answer{ padding:0 26px 24px; line-height:1.6; }
+
+/* ===== 11. CTA final + 12. Footer ===== */
+.final{
+  background:
+    radial-gradient(900px 460px at 50% -6%, hsl(222,28%,20%), transparent 62%),
+    linear-gradient(160deg,hsl(222,25%,14%),hsl(222,26%,9%));
+  color:#fff; text-align:center;
+}
+.final .eyebrow{ color:var(--gold-light); font-family:var(--font-num); font-weight:700;
+  letter-spacing:.16em; text-transform:uppercase; font-size:.78rem; }
+.final h2{ font-family:var(--font-display); font-weight:800;
+  font-size:clamp(1.7rem,4.6vw,2.7rem); margin:16px auto 18px; max-width:660px;
+  line-height:1.2; letter-spacing:-.02em; }
+.final h2 .hl{ color:var(--gold-light); font-style:italic; }
+.final p.urg{ display:inline-flex; align-items:center; gap:9px;
+  background:hsla(0,0%,100%,.1); border:1px solid hsla(38,60%,70%,.3);
+  color:var(--gold-light); border-radius:var(--radius-pill);
+  padding:10px 22px; font-weight:600; margin-bottom:30px; }
+footer{ background:hsl(222,28%,7%); color:hsla(30,20%,85%,.7);
+        padding:52px 0 40px; text-align:center; position:relative; isolation:isolate; }
+footer .brand{ font-family:var(--font-display); font-weight:700;
+               color:var(--gold-light); font-size:1.24rem; margin-bottom:10px; }
+footer .verse{ font-family:var(--font-serif); font-style:italic; font-size:1.14rem;
+  color:hsla(38,40%,85%,.85); margin-bottom:22px; max-width:520px; margin-inline:auto; }
+footer .disclaimer{ font-size:.8rem; line-height:1.6; max-width:680px;
+                    margin:22px auto 0; color:hsla(38,30%,80%,.5); }
+footer .copy{ font-size:.82rem; margin-top:18px; }
+
+/* ===== Modal downsell ===== */
+.downsell-overlay{ position:fixed; inset:0; background:hsla(222,35%,6%,.72);
+  backdrop-filter:blur(4px); display:none; align-items:center; justify-content:center;
+  padding:20px; z-index:120; }
+.downsell-overlay.open{ display:flex; }
+.downsell-modal{ background:var(--bg-marfim); border-radius:var(--radius-lg);
+  max-width:460px; width:100%; padding:38px 32px; text-align:center;
+  box-shadow:var(--shadow-large); position:relative; border:2px solid var(--coral);
+  animation:pop .35s cubic-bezier(.2,.8,.3,1.2); isolation:isolate;
+  max-height:92vh; overflow-y:auto; }
+@keyframes pop{ from{transform:scale(.9); opacity:0} to{transform:scale(1); opacity:1} }
+.downsell-modal .close{ position:absolute; top:14px; right:16px; background:none;
+  border:none; font-size:1.5rem; color:var(--text-muted); cursor:pointer; line-height:1; }
+.downsell-modal .dtag{ font-family:var(--font-num); font-weight:800; font-size:.76rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--coral-dark); margin-bottom:10px; }
+.downsell-modal h3{ font-family:var(--font-display); font-weight:700; font-size:1.4rem;
+                    color:var(--primary); margin-bottom:12px; line-height:1.3; }
+.downsell-modal .dmockup{ display:block; width:100%; max-width:330px; margin:14px auto 4px;
+  filter:drop-shadow(0 14px 26px hsla(222,30%,8%,.24)); }
+.downsell-modal .dprice{ font-family:var(--font-num); font-weight:800; font-size:2.2rem;
+                         color:var(--buy-dark); margin:14px 0 22px; }
+.downsell-modal .dprice s{ font-size:1.1rem; color:var(--strike); margin-right:8px; }
+.downsell-modal .refuse{ display:block; margin-top:16px; font-size:.86rem;
+  color:var(--text-muted); text-decoration:underline; cursor:pointer; }
+
+/* ===== Textura de grão ===== */
+.vitrine,.inside,.testi,.guarantee,.faq,
+.hero,.bonus,.offer,.final,footer,
+.proj-card,.testi-card,.bonus-card,.plan,
+.guarantee-box,.bonus-final,.downsell-modal,.mid-cta{
+  position:relative; isolation:isolate;
+}
+.vitrine::before,.inside::before,.testi::before,.guarantee::before,.faq::before,
+.hero::before,.bonus::before,.offer::before,.final::before,footer::before,
+.proj-card::before,.testi-card::before,.bonus-card::before,.plan::before,
+.guarantee-box::before,.bonus-final::before,.downsell-modal::before,
+.mid-cta::before{
+  content:""; position:absolute; inset:0; z-index:-1; pointer-events:none;
+  border-radius:inherit;
+  background-image:var(--grain); background-size:220px 220px;
+}
+.vitrine::before,.inside::before,.testi::before,.guarantee::before,.faq::before,
+.proj-card::before,.testi-card::before,.bonus-card::before,
+.plan.vip::before,.guarantee-box::before,.bonus-final::before,
+.downsell-modal::before{
+  opacity:.07; mix-blend-mode:multiply; }
+.hero::before,.bonus::before,.offer::before,.final::before,footer::before,
+.plan.basic::before,.mid-cta::before{
+  opacity:.4; mix-blend-mode:soft-light; }
+.hero::before{ opacity:.5; }
+
+/* ===== Placeholders de imagem (V1 — REMOVER quando os assets entrarem) =====
+   Nenhuma imagem de cão existe ainda: elas serão geradas depois, fora daqui.
+   Sem este bloco a página exibiria ícone de imagem quebrada em cada slot.
+   Quando todos os arquivos de assets/ estiverem no lugar, apague esta seção
+   inteira e o atributo data-ph dos <img>. */
+img[data-ph]{
+  background:
+    repeating-linear-gradient(45deg,
+      hsl(214,16%,93%) 0 12px, hsl(214,16%,89%) 12px 24px);
+  border:1px dashed hsl(214,14%,70%);
+  border-radius:var(--radius-sm);
+  min-height:120px;
+  position:relative;
+}
+/* Sem arquivo, width:auto colapsa e o carrossel fica com buraco.
+   Cada slot recebe a proporcao que a imagem real vai ter. */
+.fm-img[data-ph]{ width:269px; }      /* ficha: retrato (380px de altura) */
+.pm-img[data-ph]{ width:400px; }      /* lifestyle: 4x3 (300px de altura) */
+.proj-thumb[data-ph]{ padding:0; }    /* preenche o palco do card */
+.hero-mockup[data-ph]{ aspect-ratio:4/3; width:100%; }
+.plan-mockup[data-ph], .dmockup[data-ph]{ aspect-ratio:16/10; width:100%; }
+.bonus-card .cover img[data-ph]{ width:100%; aspect-ratio:16/10; }
+@media (max-width:900px){ .pm-img[data-ph]{ width:333px; } }
+@media (max-width:560px){ .pm-img[data-ph]{ width:253px; } .fm-img[data-ph]{ width:190px; } }
+img[data-ph]::after{
+  content:"⬚ " attr(data-ph);
+  position:absolute; inset:0;
+  display:grid; place-items:center; text-align:center;
+  padding:10px;
+  font-family:var(--font-num); font-weight:700; font-size:.76rem;
+  letter-spacing:.04em; line-height:1.4;
+  color:hsl(214,12%,42%);
+  background:inherit;
+}
+
+/* ===== Scroll-reveal ===== */
+.reveal{ opacity:0; transform:translateY(28px);
+  transition:opacity .7s ease, transform .7s cubic-bezier(.2,.7,.3,1); }
+.reveal.in{ opacity:1; transform:none; }
+.delay-1{ transition-delay:.12s; }
+.delay-2{ transition-delay:.24s; }
+.delay-3{ transition-delay:.36s; }
+
+/* ===== Breakpoints ===== */
+@media (max-width:900px){
+  .offer-grid{ grid-template-columns:1fr; }
+  .pm-img{ height:250px; }
+  .grid-desire--proj{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:860px){
+  .hero-mockup{ max-width:100%; }
+}
+@media (max-width:768px){
+  section{ padding:64px 0; }
+  .grid-desire,.grid-testi{ grid-template-columns:1fr; }
+  .grid-bonus{ grid-template-columns:1fr; gap:68px 22px; }
+  .compare-grid{ grid-template-columns:1fr; }
+  .grid-desire--proj{ grid-template-columns:1fr; }
+  .hero-trust{ flex-wrap:wrap; }
+  .desire-strip{ padding:32px 24px; }
+}
+@media (max-width:560px){
+  .pm-img{ height:190px; }
+  .cat-badge{ font-size:.9rem; padding:10px 16px; }
+  .hero-cta .btn, .btn-block{ width:100%; }
+  .plan{ padding:28px 22px; }
+  .plan.vip{ padding-top:44px; }
+  .guarantee-box{ padding:36px 22px; }
+  /* CTAs longos ("Quero o catálogo + os 4 bônus" etc.) quebravam em 2 linhas
+     e a seta ficava solta embaixo — reduz fonte/padding só neste breakpoint,
+     mantendo texto + seta sempre na mesma linha. */
+  .btn{ font-size:.94rem; padding:16px 22px; gap:.4em; white-space:normal; }
+  .btn-lg{ font-size:.98rem; padding:18px 24px; }
+  .btn .arrow{ flex:none; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation:none !important; scroll-behavior:auto; }
+  .reveal{ opacity:1; transform:none; transition:none; }
+  .pm-row,.cat-row{ overflow-x:auto; }
+  .desire-strip::before,.desire-strip::after{ background-position:center; }
+  .desire-strip .ds-underline::after{ transform:scaleX(1); }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ 0. TOPBAR ============ -->
+<div class="topbar">
+  <div class="topbar-track" id="topbarTrack">
+    <div class="topbar-seq">
+      <span class="tb-item">📐 Catálogo de projetos</span><span class="tb-star">✦</span>
+      <span class="tb-item">🐕 50 móveis para cães</span><span class="tb-star">✦</span>
+      <span class="tb-item">🔨 Para quem já corta madeira</span><span class="tb-star">✦</span>
+      <span class="tb-item">📏 Medidas, peças e montagem</span><span class="tb-star">✦</span>
+      <span class="tb-item">💻 Ficha em PDF, acesso online</span><span class="tb-star">✦</span>
+      <span class="tb-item">🛡️ 15 dias de garantia</span><span class="tb-star">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 1. HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-stack">
+
+      <h1 class="reveal in">Amplie seu catálogo com<br class="br-d">
+        <span class="hl-block">50 móveis para cães</span> que você<br class="br-d">
+        corta, monta e vende</h1>
+
+      <p class="sub reveal in delay-1">
+        Cada projeto vem numa <b>ficha técnica visual</b>: as medidas do móvel,
+        a <b>relação de peças</b> uma a uma, o material, a lógica de corte e o
+        <b>passo a passo da montagem</b>. Você escolhe, corta e vende &mdash; sem
+        desenhar nada do zero.
+      </p>
+
+      <div class="book-stage reveal in delay-1">
+        <div class="book-glow"></div>
+  <img src="assets/mockups/hero-header-transparent.png" class="hero-mockup"
+             alt="Catálogo de 50 projetos de móveis para cães aberto no notebook e no celular, ao lado de fichas técnicas impressas"
+             fetchpriority="high" width="1448" height="1086" />
+      </div>
+
+      <div class="hero-trust reveal in delay-2">
+        <span>⚡ Acesso imediato</span>
+        <span>💻 100% online</span>
+      </div>
+
+      <div class="hero-delivery reveal in delay-2">
+        Você recebe tudo na hora, direto no seu
+        <span class="nowrap"><img src="icon-wpp.webp" alt="WhatsApp" class="hero-delivery-ic" loading="eager" width="20" height="20" /><b>WhatsApp</b></span>
+        e no seu
+        <span class="nowrap"><img src="icon-email.webp" alt="E-mail" class="hero-delivery-ic" loading="eager" width="20" height="20" /><b>e-mail</b></span>
+      </div>
+
+      <div class="hero-cta reveal in delay-2">
+        <a href="#comprar" class="btn btn-buy btn-lg">Quero ampliar meu catálogo <span class="arrow">➔</span></a>
+      </div>
+
+      <div class="hero-social reveal in delay-3">
+        <div class="hero-social-avatars">
+          <img src="assets/depoimentos/hero-1.jpg" loading="lazy" alt="" width="38" height="38" />
+          <img src="assets/depoimentos/hero-2.jpg" loading="lazy" alt="" width="38" height="38" />
+          <img src="assets/depoimentos/hero-3.jpg" loading="lazy" alt="" width="38" height="38" />
+          <img src="assets/depoimentos/hero-4.jpg" loading="lazy" alt="" width="38" height="38" />
+          <img src="assets/depoimentos/hero-5.jpg" loading="lazy" alt="" width="38" height="38" />
+        </div>
+        <span class="hero-social-label">Mais de 1.000 marceneiros!</span>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============ 2. VITRINE DE DESEJO ============ -->
+<section class="vitrine">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que tem dentro</span>
+      <h2>Cada projeto é um <span class="hl">produto novo</span> pra você anunciar</h2>
+      <div class="rule"></div>
+      <p>Não é inspiração nem foto solta. É ficha com medida, lista de peças e
+         ordem de montagem &mdash; do jeito que se leva pra bancada.</p>
+    </div>
+
+    <div class="grid-desire grid-desire--proj">
+
+      <div class="proj-card reveal">
+        <div class="proj-stage">
+          <span class="proj-porte">Porte grande</span>
+          <img class="proj-thumb" src="assets/fichas-preview/01-casinha-classica.webp" loading="lazy"
+               alt="Ficha técnica da Casinha Clássica com Telhado de Duas Águas: medidas, peças e montagem" />
+        </div>
+        <span class="verse">O carro-chefe</span>
+        <h3>Casinha Clássica com Telhado de Duas Águas</h3>
+        <p>O projeto de entrada do catálogo &mdash; todo marceneiro precisa ter
+           uma casinha assim pronta pra cortar no primeiro pedido.</p>
+      </div>
+
+      <div class="proj-card reveal delay-1">
+        <div class="proj-stage">
+          <span class="proj-porte">Todos os portes</span>
+          <img class="proj-thumb" src="assets/fichas-preview/10-cama-sofa.webp" loading="lazy"
+               alt="Ficha técnica da Cama-Sofá com Encosto: medidas, peças e montagem" />
+        </div>
+        <span class="verse">Vende como móvel de sala</span>
+        <h3>Cama-Sofá com Encosto</h3>
+        <p>Encosto nos três lados e estrado ripado. O cliente não compara com
+           caminha de pet shop &mdash; compara com móvel, e paga como móvel.</p>
+      </div>
+
+      <div class="proj-card reveal delay-2">
+        <div class="proj-stage">
+          <span class="proj-porte">Cão idoso</span>
+          <img class="proj-thumb" src="assets/fichas-preview/22-rampa-sofa.webp" loading="lazy"
+               alt="Ficha técnica da Rampa para Sofá: medidas, peças e montagem" />
+        </div>
+        <span class="verse">Compra por necessidade</span>
+        <h3>Rampa para Sofá</h3>
+        <p>Dachshund e cão idoso não podem saltar. Quem procura isso não está
+           pesquisando preço &mdash; está resolvendo um problema de saúde.</p>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-stage">
+          <span class="proj-porte">Porte médio</span>
+          <img class="proj-thumb" src="assets/fichas-preview/16-comedouro-elevado-duplo.webp" loading="lazy"
+               alt="Ficha técnica do Comedouro Elevado Duplo: medidas, peças e montagem" />
+        </div>
+        <span class="verse">Peça de saída rápida</span>
+        <h3>Comedouro Elevado Duplo</h3>
+        <p>Pouca madeira, corte simples, margem boa. É o projeto que fecha
+           venda no mesmo dia em que o cliente vê a foto.</p>
+      </div>
+
+      <div class="proj-card reveal delay-1">
+        <div class="proj-stage">
+          <span class="proj-porte">Aproveita o vão</span>
+          <img class="proj-thumb" src="assets/fichas-preview/06-casinha-sob-escada.webp" loading="lazy"
+               alt="Ficha técnica da Casinha Sob a Escada: medidas, peças e montagem" />
+        </div>
+        <span class="verse">Ticket mais alto</span>
+        <h3>Casinha Sob a Escada</h3>
+        <p>Transforma o vão morto em abrigo embutido. É marcenaria sob medida &mdash;
+           e o orçamento acompanha.</p>
+      </div>
+
+      <div class="proj-card reveal delay-2">
+        <div class="proj-stage">
+          <span class="proj-porte">Pet shop</span>
+          <img class="proj-thumb" src="assets/fichas-preview/35-mesa-tosa.webp" loading="lazy"
+               alt="Ficha técnica da Mesa de Tosa com Braço: medidas, peças e montagem" />
+        </div>
+        <span class="verse">Cliente que repete</span>
+        <h3>Mesa de Tosa com Braço</h3>
+        <p>Pet shop não compra uma peça: equipa a loja inteira e volta quando
+           abre a segunda unidade.</p>
+      </div>
+
+    </div>
+
+    <div class="feed-panel reveal" id="contextFeedPanel">
+      <div class="feed-toolbar">
+        <p><b>50 móveis em uso real.</b> Explore o resultado de cada projeto com o cachorro usando a peça.</p>
+        <div class="feed-switch" aria-label="Colunas do feed de demonstrações">
+          <button type="button" data-feed-target="contextFeed" data-columns="1" aria-pressed="false">1 coluna</button>
+          <button type="button" data-feed-target="contextFeed" data-columns="2" aria-pressed="true">2 colunas</button>
+        </div>
+      </div>
+      <div class="feed-grid context-feed" id="contextFeed" data-columns="2"></div>
+    </div>
+
+    <div class="page-marquee reveal">
+      <div class="pm-row">
+        <div class="pm-track pm-left">
+          <img class="pm-img" src="assets/vitrine/contextual/01-casinha-classica.webp" loading="lazy" alt="Casinha clássica em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/02-casinha-varanda.webp" loading="lazy" alt="Casinha com varanda em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/03-casinha-isolada.webp" loading="lazy" alt="Casinha isolada em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/06-casinha-sob-escada.webp" loading="lazy" alt="Casinha sob a escada em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/08-casinha-suspensa.webp" loading="lazy" alt="Casinha suspensa em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/09-cama-estrado.webp" loading="lazy" alt="Cama com estrado em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/10-cama-sofa.webp" loading="lazy" alt="Cama sofá em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/01-casinha-classica.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/02-casinha-varanda.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/03-casinha-isolada.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/06-casinha-sob-escada.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/08-casinha-suspensa.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/09-cama-estrado.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/10-cama-sofa.webp" loading="lazy" alt="" aria-hidden="true" />
+        </div>
+      </div>
+      <div class="pm-row">
+        <div class="pm-track pm-right">
+          <img class="pm-img" src="assets/vitrine/contextual/12-cama-dossel.webp" loading="lazy" alt="Cama com dossel em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/15-beliche-dois-caes.webp" loading="lazy" alt="Beliche para dois cães em uso" />
+          <img class="pm-img" src="assets/vitrine/contextual/16-comedouro-duplo.webp" loading="lazy" alt="Comedouro duplo em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/17-comedouro-regulavel.webp" loading="lazy" alt="Comedouro regulável em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/18-comedouro-porta-racao.webp" loading="lazy" alt="Comedouro com ração em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/20-estacao-alimentacao.webp" loading="lazy" alt="Estação de alimentação em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/22-rampa-sofa.webp" loading="lazy" alt="Rampa para sofá em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/12-cama-dossel.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/15-beliche-dois-caes.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/16-comedouro-duplo.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/17-comedouro-regulavel.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/18-comedouro-porta-racao.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/20-estacao-alimentacao.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/22-rampa-sofa.webp" loading="lazy" alt="" aria-hidden="true" />
+        </div>
+      </div>
+      <div class="pm-row">
+        <div class="pm-track pm-left pm-slow">
+          <img class="pm-img" src="assets/vitrine/contextual/24-escada-cama.webp" loading="lazy" alt="Escada para cama em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/28-bau-brinquedos.webp" loading="lazy" alt="Baú de brinquedos em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/30-armario-racao.webp" loading="lazy" alt="Armário de ração em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/31-estacao-entrada.webp" loading="lazy" alt="Estação de entrada em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/35-mesa-tosa.webp" loading="lazy" alt="Mesa de tosa em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/40-canil-modular.webp" loading="lazy" alt="Canil modular em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/46-agility.webp" loading="lazy" alt="Agility básico em uso por um cachorro" />
+          <img class="pm-img" src="assets/vitrine/contextual/24-escada-cama.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/28-bau-brinquedos.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/30-armario-racao.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/31-estacao-entrada.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/35-mesa-tosa.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/40-canil-modular.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="pm-img" src="assets/vitrine/contextual/46-agility.webp" loading="lazy" alt="" aria-hidden="true" />
+        </div>
+      </div>
+    </div>
+
+    <div class="vitrine-cta reveal">
+      <a href="#comprar" class="btn btn-buy btn-lg">Quero os 50 projetos <span class="arrow">➔</span></a>
+    </div>
+
+    <div class="desire-strip reveal">
+      <span class="ds-icon">✦ ✦ ✦</span>
+      <p class="ds-text">
+        São <strong>50 projetos</strong> em <strong>8 categorias</strong> &mdash; ou seja,
+        <span class="ds-underline">50 produtos diferentes</span> que você pode anunciar
+        sem desenhar nada do zero.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. COMPARATIVO ============ -->
+<section class="compare">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">A diferença que aparece na serra</span>
+      <h2>Copiar foto da internet é uma coisa.<br />Ter a ficha do projeto é outra.</h2>
+      <div class="rule"></div>
+      <p>Você já sabe cortar. O que custa caro é descobrir que a medida não fecha
+         depois que a chapa já passou no esquadro.</p>
+    </div>
+
+    <div class="compare-grid">
+
+      <div class="compare-col bad reveal">
+        <span class="tag">Do jeito de sempre</span>
+        <h3>Tirando medida de foto do Pinterest</h3>
+        <ul>
+          <li><span class="ic">✕</span> <span class="txt">Medida chutada no olho pela foto</span></li>
+          <li><span class="ic">✕</span> <span class="txt">Serve pro Shih Tzu, não serve pro Labrador</span></li>
+          <li><span class="ic">✕</span> <span class="txt">Descobre a peça que faltou no meio da montagem</span></li>
+          <li><span class="ic">✕</span> <span class="txt">Chapa perdida e corte refeito</span></li>
+          <li><span class="ic">✕</span> <span class="txt">Horas desenhando antes de vender</span></li>
+        </ul>
+      </div>
+
+      <div class="compare-col good reveal delay-1">
+        <span class="tag">Com o catálogo</span>
+        <h3>Abrindo a ficha e indo direto pra bancada</h3>
+        <ul>
+          <li><span class="ic">✓</span> <span class="txt">Medidas do móvel <b>na ficha do projeto</b></span></li>
+          <li><span class="ic">✓</span> <span class="txt">Projetos <b>separados por porte</b> de cão</span></li>
+          <li><span class="ic">✓</span> <span class="txt">Relação de peças <b>com letra e quantidade</b></span></li>
+          <li><span class="ic">✓</span> <span class="txt">Material e <b>lógica de corte</b> definidos</span></li>
+          <li><span class="ic">✓</span> <span class="txt">Escolheu o projeto, <b>já vai cortar</b></span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. VEJA POR DENTRO ============ -->
+<section class="inside">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Veja por dentro</span>
+      <h2>A <span class="hl">ficha técnica</span> de cada um dos 50 projetos</h2>
+      <div class="rule"></div>
+      <p>Uma página por móvel: o produto montado, as medidas, a relação de peças,
+         o material com a lógica de corte e a ordem de montagem.</p>
+    </div>
+
+    <div class="ebook-preview reveal">
+      <span class="ep-chip">✦ Prévia do material</span>
+      <div class="ep-frame ep-frame--flip">
+        <iframe src="https://heyzine.com/flip-book/d5c314f2ed.html" loading="lazy"
+                title="Prévia folheável do catálogo 50 Projetos de Móveis para Cães"
+                class="fp-iframe" allow="clipboard-write" scrolling="no"
+                allowfullscreen frameborder="0"></iframe>
+      </div>
+      <p class="ep-caption">Folheie a prévia: capa, boas-vindas, como usar a ficha e o índice por categorias.</p>
+    </div>
+
+    <div class="feed-panel reveal" id="fichaFeedPanel">
+      <div class="feed-toolbar">
+        <p><b>As 50 fichas técnicas reais.</b> Veja todas em sequência e escolha como navegar.</p>
+        <div class="feed-switch" aria-label="Colunas do feed de fichas">
+          <button type="button" data-feed-target="fichaFeed" data-columns="1" aria-pressed="false">1 coluna</button>
+          <button type="button" data-feed-target="fichaFeed" data-columns="2" aria-pressed="true">2 colunas</button>
+        </div>
+      </div>
+      <div class="feed-grid ficha-feed" id="fichaFeed" data-columns="2"></div>
+    </div>
+
+    <div class="ficha-marquee reveal">
+      <div class="fm-row">
+        <div class="fm-track fm-left">
+          <img class="fm-img" src="assets/fichas-preview/01-casinha-classica.webp" loading="lazy" alt="Ficha técnica: Casinha Clássica com Telhado de Duas Águas" />
+          <img class="fm-img" src="assets/fichas-preview/10-cama-sofa.webp" loading="lazy" alt="Ficha técnica: Cama-Sofá com Encosto" />
+          <img class="fm-img" src="assets/fichas-preview/16-comedouro-elevado-duplo.webp" loading="lazy" alt="Ficha técnica: Comedouro Elevado Duplo" />
+          <img class="fm-img" src="assets/fichas-preview/22-rampa-sofa.webp" loading="lazy" alt="Ficha técnica: Rampa para Sofá" />
+          <img class="fm-img" src="assets/fichas-preview/06-casinha-sob-escada.webp" loading="lazy" alt="Ficha técnica: Casinha Sob a Escada" />
+          <img class="fm-img" src="assets/fichas-preview/01-casinha-classica.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/10-cama-sofa.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/16-comedouro-elevado-duplo.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/22-rampa-sofa.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/06-casinha-sob-escada.webp" loading="lazy" alt="" aria-hidden="true" />
+        </div>
+      </div>
+      <div class="fm-row">
+        <div class="fm-track fm-right">
+          <img class="fm-img" src="assets/fichas-preview/28-bau-brinquedos.webp" loading="lazy" alt="Ficha técnica: Baú Organizador de Brinquedos" />
+          <img class="fm-img" src="assets/fichas-preview/35-mesa-tosa.webp" loading="lazy" alt="Ficha técnica: Mesa de Tosa com Braço" />
+          <img class="fm-img" src="assets/fichas-preview/40-canil-modular.webp" loading="lazy" alt="Ficha técnica: Canil Modular com Painéis" />
+          <img class="fm-img" src="assets/fichas-preview/24-escada-cama.webp" loading="lazy" alt="Ficha técnica: Escada de 3 Degraus para Cama" />
+          <img class="fm-img" src="assets/fichas-preview/46-agility.webp" loading="lazy" alt="Ficha técnica: Circuito de Agility Básico" />
+          <img class="fm-img" src="assets/fichas-preview/28-bau-brinquedos.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/35-mesa-tosa.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/40-canil-modular.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/24-escada-cama.webp" loading="lazy" alt="" aria-hidden="true" />
+          <img class="fm-img" src="assets/fichas-preview/46-agility.webp" loading="lazy" alt="" aria-hidden="true" />
+        </div>
+      </div>
+    </div>
+
+
+    <div class="cat-marquee reveal">
+      <div class="cat-row">
+        <div class="cat-track cat-left">
+          <span class="cat-badge cat-badge--destaque">Casinha Clássica com Telhado de Duas Águas</span>
+          <span class="cat-badge">Casinha com Varanda Frontal</span>
+          <span class="cat-badge">Casinha com Telhado Removível</span>
+          <span class="cat-badge cat-badge--destaque">Casinha Sob a Escada</span>
+          <span class="cat-badge">Casinha-Aparador de Sala</span>
+          <span class="cat-badge">Casinha Isolada para Área Externa</span>
+          <span class="cat-badge">Casinha Dupla para Dois Cães</span>
+          <span class="cat-badge">Casinha Suspensa com Estrado</span>
+          <span aria-hidden="true" class="cat-badge cat-badge--destaque">Casinha Clássica com Telhado de Duas Águas</span>
+          <span aria-hidden="true" class="cat-badge">Casinha com Varanda Frontal</span>
+          <span aria-hidden="true" class="cat-badge">Casinha com Telhado Removível</span>
+          <span aria-hidden="true" class="cat-badge cat-badge--destaque">Casinha Sob a Escada</span>
+          <span aria-hidden="true" class="cat-badge">Casinha-Aparador de Sala</span>
+          <span aria-hidden="true" class="cat-badge">Casinha Isolada para Área Externa</span>
+          <span aria-hidden="true" class="cat-badge">Casinha Dupla para Dois Cães</span>
+          <span aria-hidden="true" class="cat-badge">Casinha Suspensa com Estrado</span>
+        </div>
+      </div>
+      <div class="cat-row">
+        <div class="cat-track cat-right">
+          <span class="cat-badge">Cama com Estrado Ripado</span>
+          <span class="cat-badge cat-badge--destaque">Cama-Sofá com Encosto</span>
+          <span class="cat-badge">Cama Elevada com Pés Torneados</span>
+          <span class="cat-badge">Cama Gaveta sob Móvel</span>
+          <span class="cat-badge">Cama Ortopédica de Bordas Baixas</span>
+          <span class="cat-badge">Beliche para Dois Cães Pequenos</span>
+          <span class="cat-badge cat-badge--destaque">Comedouro Elevado Duplo</span>
+          <span class="cat-badge">Comedouro com Altura Regulável</span>
+          <span aria-hidden="true" class="cat-badge">Cama com Estrado Ripado</span>
+          <span aria-hidden="true" class="cat-badge cat-badge--destaque">Cama-Sofá com Encosto</span>
+          <span aria-hidden="true" class="cat-badge">Cama Elevada com Pés Torneados</span>
+          <span aria-hidden="true" class="cat-badge">Cama Gaveta sob Móvel</span>
+          <span aria-hidden="true" class="cat-badge">Cama Ortopédica de Bordas Baixas</span>
+          <span aria-hidden="true" class="cat-badge">Beliche para Dois Cães Pequenos</span>
+          <span aria-hidden="true" class="cat-badge cat-badge--destaque">Comedouro Elevado Duplo</span>
+          <span aria-hidden="true" class="cat-badge">Comedouro com Altura Regulável</span>
+        </div>
+      </div>
+      <div class="cat-row">
+        <div class="cat-track cat-left">
+          <span class="cat-badge">Comedouro com Porta-Ração Embutido</span>
+          <span class="cat-badge">Comedouro Lento</span>
+          <span class="cat-badge cat-badge--destaque">Rampa para Sofá</span>
+          <span class="cat-badge">Rampa Dobrável para Carro</span>
+          <span class="cat-badge">Escada de 3 Degraus para Cama</span>
+          <span class="cat-badge">Escada-Baú</span>
+          <span class="cat-badge">Baú Organizador de Brinquedos</span>
+          <span class="cat-badge">Armário de Ração com Dosador</span>
+          <span aria-hidden="true" class="cat-badge">Comedouro com Porta-Ração Embutido</span>
+          <span aria-hidden="true" class="cat-badge">Comedouro Lento</span>
+          <span aria-hidden="true" class="cat-badge cat-badge--destaque">Rampa para Sofá</span>
+          <span aria-hidden="true" class="cat-badge">Rampa Dobrável para Carro</span>
+          <span aria-hidden="true" class="cat-badge">Escada de 3 Degraus para Cama</span>
+          <span aria-hidden="true" class="cat-badge">Escada-Baú</span>
+          <span aria-hidden="true" class="cat-badge">Baú Organizador de Brinquedos</span>
+          <span aria-hidden="true" class="cat-badge">Armário de Ração com Dosador</span>
+        </div>
+      </div>
+      <div class="cat-row">
+        <div class="cat-track cat-right">
+          <span class="cat-badge">Estação de Entrada</span>
+          <span class="cat-badge">Portão de Vão com Trava</span>
+          <span class="cat-badge cat-badge--destaque">Mesa de Tosa com Braço</span>
+          <span class="cat-badge">Banheira Elevada com Ralo</span>
+          <span class="cat-badge">Canil Modular com Painéis</span>
+          <span class="cat-badge">Bebedouro Externo com Reservatório</span>
+          <span class="cat-badge">Circuito de Agility Básico</span>
+          <span class="cat-badge">Tábua de Farejamento</span>
+          <span class="cat-badge">+ 18 outros projetos</span>
+          <span aria-hidden="true" class="cat-badge">Estação de Entrada</span>
+          <span aria-hidden="true" class="cat-badge">Portão de Vão com Trava</span>
+          <span aria-hidden="true" class="cat-badge cat-badge--destaque">Mesa de Tosa com Braço</span>
+          <span aria-hidden="true" class="cat-badge">Banheira Elevada com Ralo</span>
+          <span aria-hidden="true" class="cat-badge">Canil Modular com Painéis</span>
+          <span aria-hidden="true" class="cat-badge">Bebedouro Externo com Reservatório</span>
+          <span aria-hidden="true" class="cat-badge">Circuito de Agility Básico</span>
+          <span aria-hidden="true" class="cat-badge">Tábua de Farejamento</span>
+          <span aria-hidden="true" class="cat-badge">+ 18 outros projetos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mid-cta reveal delay-2">
+      <span class="mc-chip">✦ Você viu só algumas fichas</span>
+      <p class="mc-title">Lá dentro são <strong>50 projetos completos</strong>, cada um com a ficha pronta pra bancada.</p>
+      <p class="small">Escolhe um, corta hoje, fotografa e anuncia. Depois volta e escolhe o próximo.</p>
+      <a href="#comprar" class="btn btn-lg">Quero o catálogo completo <span class="arrow">➔</span></a>
+      <div class="mc-facts">
+        <span><b>50</b> projetos</span>
+        <span><b>8</b> categorias</span>
+        <span><b>PDF</b> no celular e no computador</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. BÔNUS ============ -->
+<section class="bonus">
+  <div class="container">
+    <div class="section-head dark-head reveal">
+      <span class="eyebrow">Vai junto</span>
+      <h2>4 bônus para você <span class="hl">vender</span>, não só cortar</h2>
+      <div class="rule"></div>
+      <p>Saber fazer o móvel é metade. A outra metade é precificar certo
+         e mandar o orçamento sem travar.</p>
+    </div>
+
+    <div class="grid-bonus">
+
+      <div class="bonus-card reveal">
+        <div class="cover">
+          <img src="assets/mockups/bonus/calculadora-preco-lucro-transparent.png" loading="lazy"
+               alt="Bônus: calculadora de preço e lucro — mockup no celular" />
+        </div>
+        <h3>Calculadora de Preço e Lucro</h3>
+        <p>Você põe o custo da chapa, das ferragens e a sua hora de trabalho. Ela devolve
+           quanto cobrar e quanto sobra de lucro &mdash; sem vender no prejuízo.</p>
+        <div class="bonus-price">
+          <s>R$ 47</s>
+          <span class="free">VAI SAIR DE GRAÇA</span>
+        </div>
+      </div>
+
+      <div class="bonus-card reveal delay-1">
+        <div class="cover">
+          <img src="assets/mockups/bonus/guia-protecao-umidade-transparent.png" loading="lazy"
+               alt="Bônus: guia de proteção contra umidade — apostila e celular" />
+        </div>
+        <h3>Guia de Proteção Contra Umidade</h3>
+        <p>Aprenda a proteger casinhas e móveis externos contra chuva, umidade e desgaste
+           &mdash; com orientações de impermeabilização, acabamento e manutenção.</p>
+        <div class="bonus-price">
+          <s>R$ 39</s>
+          <span class="free">VAI SAIR DE GRAÇA</span>
+        </div>
+      </div>
+
+      <div class="bonus-card reveal delay-1">
+        <div class="cover">
+          <img src="assets/mockups/bonus/50-personalizacoes-transparent.png" loading="lazy"
+               alt="Bônus: 50 personalizações para aumentar o valor dos móveis pet — apostila e celular" />
+        </div>
+        <h3>50 Personalizações Para Aumentar o Valor de Venda dos Móveis Pet</h3>
+        <p>Tenha 50 ideias de acabamentos, acessórios e melhorias para transformar cada
+           projeto em uma versão personalizada e cobrar mais pelo móvel produzido.</p>
+        <div class="bonus-price">
+          <s>R$ 37</s>
+          <span class="free">VAI SAIR DE GRAÇA</span>
+        </div>
+      </div>
+
+      <div class="bonus-card reveal delay-2">
+        <div class="cover">
+          <img src="assets/mockups/bonus/kit-artes-divulgacao-transparent.png" loading="lazy"
+               alt="Bônus: kit de artes para divulgação — celulares e artes promocionais" />
+        </div>
+        <h3>Kit de Artes Para Divulgação</h3>
+        <p>Artes prontas para divulgar seus móveis nas redes sociais e no WhatsApp
+           &mdash; você personaliza, publica e começa a apresentar seus projetos.</p>
+        <div class="bonus-price">
+          <s>R$ 29</s>
+          <span class="free">VAI SAIR DE GRAÇA</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bonus-final reveal">
+      <span class="bonus-final-badge">🎁 Os 4 bônus juntos</span>
+      <p class="bonus-sum">
+        Sozinhos sairiam por <s class="was">R$ 152</s> &mdash;
+        hoje eles vão junto com o catálogo, <strong>totalmente de graça</strong>.
+      </p>
+      <a href="#comprar" class="btn btn-buy btn-lg">Quero o catálogo + os 4 bônus <span class="arrow">➔</span></a>
+      <span class="bonus-final-note">✦ Os bônus fazem parte da oferta atual desta página.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. DEPOIMENTOS ============ -->
+<section class="testi">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Quem já usa</span>
+      <h2>O que dizem os <span class="hl">marceneiros</span></h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="grid-testi">
+
+      <div class="testi-card reveal">
+        <div class="testi-head">
+          <img class="avatar" src="assets/depoimentos/depo-1.jpg" loading="lazy"
+               alt="Foto de Jocimar R., marceneiro" width="82" height="82" />
+          <span class="name">Jocimar R.</span>
+          <span class="meta"><span class="verified">✔ Verificado</span> &middot; Ponta Grossa/PR</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="quote">Peguei a ficha da casinha com telhado removível, cortei no
+           sábado e no domingo já tinha vendido. <strong>Não desenhei nada</strong>,
+           foi só seguir a lista de peças.</p>
+      </div>
+
+      <div class="testi-card reveal delay-1">
+        <div class="testi-head">
+          <img class="avatar" src="assets/depoimentos/depo-2.jpg" loading="lazy"
+               alt="Foto de Alcides M., marceneiro" width="82" height="82" />
+          <span class="name">Alcides M.</span>
+          <span class="meta"><span class="verified">✔ Verificado</span> &middot; Caxias do Sul/RS</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="quote">O que me pegou foi a <strong>rampa pra cão idoso</strong>.
+           Eu nem sabia que tinha procura. Fiz três em duas semanas, todas por
+           indicação da primeira.</p>
+      </div>
+
+      <div class="testi-card reveal delay-2">
+        <div class="testi-head">
+          <img class="avatar" src="assets/depoimentos/depo-3.jpg" loading="lazy"
+               alt="Foto de Rosângela T., marceneira" width="82" height="82" />
+          <span class="name">Rosângela T.</span>
+          <span class="meta"><span class="verified">✔ Verificado</span> &middot; Itajaí/SC</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="quote">Mandei o catálogo no WhatsApp de uma cliente e ela escolheu
+           dois projetos na mesma conversa. <strong>Fechou sem pedir desconto</strong>,
+           coisa que nunca tinha acontecido.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. OFERTA ============ -->
+<section class="offer" id="comprar">
+  <div class="container">
+    <div class="section-head dark-head reveal">
+      <span class="eyebrow">A oferta</span>
+      <h2>Custa <span class="hl">menos que uma chapa de MDF</span></h2>
+      <div class="rule"></div>
+      <p>E um único móvel vendido já paga o catálogo muitas vezes.</p>
+    </div>
+
+    <div class="offer-grid">
+
+      <!-- BÁSICO (decoy) -->
+      <div class="plan basic reveal">
+        <h3>Só o catálogo</h3>
+        <p class="psub">Os 50 projetos, sem os bônus de venda.</p>
+        <div class="price">R$ 22,90</div>
+        <ul>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Os 50 projetos completos</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Ficha técnica visual de cada móvel</span></li>
+          <li class="no"><span class="ic">✕</span> <span class="txt">Calculadora de Preço e Lucro</span></li>
+          <li class="no"><span class="ic">✕</span> <span class="txt">Guia de Proteção Contra Umidade</span></li>
+          <li class="no"><span class="ic">✕</span> <span class="txt">50 Personalizações Para Aumentar o Valor de Venda dos Móveis Pet</span></li>
+          <li class="no"><span class="ic">✕</span> <span class="txt">Kit de Artes Para Divulgação</span></li>
+        </ul>
+        <button class="btn btn-ghost btn-block" id="abrirDownsell" type="button">Quero só o catálogo</button>
+      </div>
+
+      <!-- COMPLETO (VIP) -->
+      <div class="plan vip reveal delay-1">
+        <span class="ribbon">⭐ O Mais Escolhido</span>
+
+        <h3>Catálogo completo + 4 bônus</h3>
+        <p class="psub">Tudo o que você precisa pra cortar e pra vender.</p>
+
+              <img class="plan-mockup" src="assets/mockups/hero-header-transparent.png" loading="lazy"
+             alt="Catálogo completo de 50 projetos de móveis para cães no notebook e celular" />
+
+        <div class="price-row">
+          <span class="anchor">De <s>R$ 152</s> por apenas</span>
+          <span class="price">R$ 29,90</span>
+        </div>
+        <div class="installment">ou <b>12x de R$ 3,01</b> &middot; pagamento único no PIX</div>
+
+        <ul>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Os <strong>50 projetos</strong> em 8 categorias</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Ficha com <strong>medidas do móvel</strong> montado</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Relação de peças com <strong>letra e quantidade</strong></span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Material e <strong>lógica de corte</strong> de cada projeto</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Passo a passo da <strong>montagem</strong></span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt"><strong>Bônus:</strong> Calculadora de Preço e Lucro</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt"><strong>Bônus:</strong> Guia de Proteção Contra Umidade</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt"><strong>Bônus:</strong> 50 Personalizações Para Aumentar o Valor de Venda dos Móveis Pet</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt"><strong>Bônus:</strong> Kit de Artes Para Divulgação</span></li>
+          <li class="yes"><span class="ic">✓</span> <span class="txt">Acesso imediato e vitalício</span></li>
+        </ul>
+
+        <a href="#" class="btn btn-buy btn-lg btn-block" data-checkout="vip">
+          Quero o catálogo completo <span class="arrow">➔</span>
+        </a>
+
+        <div class="offer-secure">
+          <span>🔒 Compra 100% segura</span> <span>&bull;</span>
+          <span>🛡️ Garantia de 15 dias</span> <span>&bull;</span>
+          <span>⚡ Acesso imediato</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. GARANTIA ============ -->
+<section class="guarantee">
+  <div class="container">
+    <div class="guarantee-box reveal">
+      <img class="seal-days-img" src="assets/garantia-15-dias.webp"
+           alt="Selo de garantia de 15 dias" loading="lazy" width="250" height="250" />
+      <h2>Abra, confira as fichas e só depois decida</h2>
+      <p>Entre, abra os projetos, veja as medidas e a relação de peças e confira se
+         fecha com o jeito que você trabalha. Se achar que não serve pra sua oficina,
+         é só me mandar uma mensagem em até <strong>15 dias</strong> que eu devolvo
+         todo o seu dinheiro &mdash; sem perguntas, sem burocracia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. FAQ ============ -->
+<section class="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas que todo marceneiro faz</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>Como eu recebo o material? <span class="plus">+</span></summary>
+        <div class="answer">Assim que o pagamento é aprovado, você recebe o acesso no
+          WhatsApp e no e-mail. É uma área online &mdash; abre no celular da oficina e no
+          computador, sem precisar instalar nada.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Preciso saber mexer em programa de projeto? <span class="plus">+</span></summary>
+        <div class="answer">Não. Você não desenha nada. Abre a ficha do projeto, lê a
+          relação de peças com as dimensões e a ordem de montagem, e leva pra serra.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Os projetos servem pra qualquer porte de cão? <span class="plus">+</span></summary>
+        <div class="answer">Os projetos indicam o porte a que atendem &mdash; é justamente
+          o que mais gera erro quando se copia foto da internet. O catálogo tem peças
+          pensadas para porte pequeno, médio e grande, cada uma na proporção certa.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Posso vender os móveis que eu fizer? <span class="plus">+</span></summary>
+        <div class="answer">Pode, sim &mdash; é exatamente pra isso que o catálogo existe.
+          Você produz e vende os móveis à vontade. O que não pode é revender ou
+          distribuir o catálogo de projetos em si.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>E se eu não gostar? <span class="plus">+</span></summary>
+        <div class="answer">Você tem 15 dias para pedir o reembolso total. Basta uma
+          mensagem, sem precisar justificar. O risco fica todo comigo.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. CTA FINAL ============ -->
+<section class="final">
+  <div class="container narrow">
+    <span class="eyebrow reveal">Última chamada</span>
+    <h2 class="reveal delay-1">Enquanto o concorrente ainda <span class="hl">desenha o primeiro</span>, você já anunciou cinco</h2>
+    <p class="urg reveal delay-1">⏳ Todo fim de semana sem catálogo é orçamento que você não fez</p>
+    <div class="reveal delay-2">
+      <a href="#comprar" class="btn btn-gold btn-lg">Quero começar por R$ 29,90 <span class="arrow">➔</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="brand">50 Projetos de Móveis para Cães</div>
+    <p class="verse">Projeto pronto na mão vale mais que ideia boa na cabeça.</p>
+    <p class="copy">&copy; 2026 &mdash; Todos os direitos reservados.</p>
+    <p class="disclaimer">
+      Este é um produto digital de projetos de marcenaria. Os resultados
+      financeiros citados dependem da execução, do mercado e do esforço de cada
+      profissional &mdash; não há garantia de faturamento. A montagem, a fixação e a
+      segurança do móvel final, assim como a adequação da peça ao porte e ao
+      comportamento do animal, são responsabilidade de quem executa o projeto.
+      Este site não tem qualquer vínculo com Facebook, Instagram ou Google.
+    </p>
+  </div>
+</footer>
+
+<!-- ============ MODAL DOWNSELL ============ -->
+<div class="downsell-overlay" id="downsellOverlay" role="dialog" aria-modal="true" aria-labelledby="downsellTitulo">
+  <div class="downsell-modal">
+    <button class="close" id="fecharDownsell" type="button" aria-label="Fechar">&times;</button>
+    <p class="dtag">Espere! Uma oferta só pra você</p>
+    <h3 id="downsellTitulo">Leva o pacote completo por menos</h3>
+    <p>Sem os 4 bônus você corta, mas fica sem o preço certo, a proteção contra umidade,
+       as personalizações lucrativas e as artes de divulgação. Leva tudo &mdash; catálogo + os 4 bônus &mdash; com desconto:</p>
+        <img class="dmockup" src="assets/mockups/hero-header-transparent.png" loading="lazy"
+         alt="Catálogo completo de 50 projetos de móveis para cães no notebook e celular" />
+    <p class="dprice"><s>R$ 29,90</s> R$ 25,90</p>
+    <a href="#" class="btn btn-buy btn-block" data-checkout="downsell">Quero o pacote completo ➔</a>
+    <a href="#" class="refuse" id="recusarDownsell" data-checkout="basico">Não, quero seguir só com o catálogo</a>
+  </div>
+</div>
+
+<script>
+/* 1. SCROLL-REVEAL */
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window)){
+    for(var k=0;k<els.length;k++) els[k].classList.add('in');
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold:.14, rootMargin:'0px 0px -8% 0px' });
+  els.forEach(function(el){ io.observe(el); });
+})();
+
+/* 2. MODAL DOWNSELL — abre no clique do plano básico; fecha por X, clique-fora e ESC */
+(function(){
+  var open    = document.getElementById('abrirDownsell');
+  var overlay = document.getElementById('downsellOverlay');
+  var close   = document.getElementById('fecharDownsell');
+  if(!open || !overlay) return;
+  function show(e){ if(e) e.preventDefault(); overlay.classList.add('open');
+                    document.body.style.overflow='hidden'; }
+  function hide(){ overlay.classList.remove('open'); document.body.style.overflow=''; }
+  open.addEventListener('click', show);
+  if(close) close.addEventListener('click', hide);
+  overlay.addEventListener('click', function(e){ if(e.target===overlay) hide(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') hide(); });
+})();
+
+/* 3. CHECKOUT + REPASSE DE UTM
+   O gateway grava utm_source, utm_medium, utm_campaign, utm_term, utm_content e
+   sck a partir da QUERY STRING do link de checkout. O pixel da UTMify NÃO faz
+   esse repasse — sem este bloco, toda venda entra como tráfego direto. */
+(function(){
+  /* Links reais das 3 ofertas do produto "50 Projetos de Móveis para Cães"
+     (id 8a2469fd-e827-4364-bffd-79e453db9109) na Cakto, criadas/confirmadas
+     em 18/09/2026 via API pública. Formato: pay.cakto.com.br/<id-da-oferta>. */
+  var LINKS = {
+    vip:      'https://pay.cakto.com.br/zov8af3',   // R$ 29,90
+    downsell: 'https://pay.cakto.com.br/kfrgjz8',   // R$ 25,90
+    basico:   'https://pay.cakto.com.br/33biy8w'    // R$ 22,90
+  };
+
+  var RASTREIO = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','sck',
+                  'fbclid','gclid','ttclid'];
+  var GUARDA = 'rastreio_50-projetos-moveis-caes';
+
+  function coletar(){
+    var vieram = {}, q = new URLSearchParams(window.location.search);
+    RASTREIO.forEach(function(k){ var v = q.get(k); if(v) vieram[k] = v; });
+    if(Object.keys(vieram).length){
+      try { sessionStorage.setItem(GUARDA, JSON.stringify(vieram)); } catch(e){}
+      return vieram;
+    }
+    try { return JSON.parse(sessionStorage.getItem(GUARDA)) || {}; } catch(e){ return {}; }
+  }
+
+  var rastreio = coletar();
+
+  function comRastreio(link){
+    var chaves = Object.keys(rastreio);
+    if(!chaves.length) return link;
+    try {
+      var u = new URL(link);
+      chaves.forEach(function(k){ u.searchParams.set(k, rastreio[k]); });
+      return u.toString();
+    } catch(e){ return link; }
+  }
+
+  var btns = document.querySelectorAll('[data-checkout]');
+  if(!btns.length) return;
+  btns.forEach(function(b){
+    var key = b.getAttribute('data-checkout');
+    if(LINKS[key]) b.setAttribute('href', comRastreio(LINKS[key]));
+  });
+})();
+
+/* 4. TOPBAR MARQUEE */
+(function(){
+  var track = document.getElementById('topbarTrack');
+  if(!track) return;
+  var seq = track.querySelector('.topbar-seq');
+  if(!seq) return;
+  track.appendChild(seq.cloneNode(true));
+})();
+
+/* 5. SCROLL-DRIVEN — faixa de diferencial */
+(function(){
+  var strip = document.querySelector('.desire-strip');
+  if(!strip) return;
+  var ticking = false;
+  function update(){
+    var r  = strip.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var mid = r.top + r.height/2;
+    var start = vh * 0.85, end = vh * 0.5;
+    var p = (start - mid) / (start - end);
+    p = Math.max(0, Math.min(1, p));
+    strip.style.setProperty('--scroll', p.toFixed(4));
+    ticking = false;
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }
+  window.addEventListener('scroll', onScroll, { passive:true });
+  window.addEventListener('resize', onScroll, { passive:true });
+  update();
+})();
+
+/* 6. FEEDS DE DEMONSTRAÇÃO E FICHAS */
+(function(){
+  var projetos = ['01-casinha-classica','02-casinha-varanda','03-casinha-isolada-externa','04-casinha-telhado-removivel','05-casinha-dupla','06-casinha-sob-escada','07-casinha-aparador-sala','08-casinha-suspensa-estrado','09-cama-estrado-ripado','10-cama-sofa-encosto','11-cama-pes-torneados','12-cama-dossel-cabeceira','13-cama-gaveta','14-cama-ortopedica-bordas-baixas','15-beliche-dois-caes','16-comedouro-elevado-duplo','17-comedouro-altura-regulavel','18-comedouro-porta-racao','19-comedouro-lento','20-estacao-alimentacao-canto','21-comedouro-baixo-pequeno-porte','22-rampa-sofa','23-rampa-dobravel-carro','24-escada-cama','25-escada-bau','26-rampa-degraus-combinados','27-rampa-piscina-deck','28-bau-organizador-brinquedos','29-painel-parede-coleiras','30-armario-racao-dosador','31-estacao-entrada','32-banco-bau-entrada','33-carrinho-apoio-rodizios','34-divisoria-portao-vao','35-mesa-tosa-braco','36-banheira-elevada-ralo','37-escada-acesso-banheira','38-estacao-secagem-secador','39-tapete-bandeja-patas','40-canil-modular-paineis','41-cobertura-telheiro-canil','42-caixa-areia-cavar','43-bebedouro-externo-reservatorio','44-banco-quintal-abrigo','45-portao-passagem-cerca','46-agility-basico','47-plataforma-comando','48-tabua-farejamento','49-caixa-enriquecimento-tampas','50-poste-marcacao-quintal'];
+  var contextuais = {'01':'01-casinha-classica.webp','02':'02-casinha-varanda.webp','03':'03-casinha-isolada.webp','06':'06-casinha-sob-escada.webp','08':'08-casinha-suspensa.webp','09':'09-cama-estrado.webp','10':'10-cama-sofa.webp','12':'12-cama-dossel.webp','15':'15-beliche-dois-caes.webp','16':'16-comedouro-duplo.webp','17':'17-comedouro-regulavel.webp','18':'18-comedouro-porta-racao.webp','20':'20-estacao-alimentacao.webp','22':'22-rampa-sofa.webp','24':'24-escada-cama.webp','28':'28-bau-brinquedos.webp','30':'30-armario-racao.webp','31':'31-estacao-entrada.webp','35':'35-mesa-tosa.webp','40':'40-canil-modular.webp','46':'46-agility.webp'};
+  function titulo(stem){ return stem.slice(3).replaceAll('-', ' '); }
+  function montarFeed(id, tipo){
+    var feed = document.getElementById(id); if(!feed) return;
+    projetos.forEach(function(stem){
+      var num=stem.slice(0,2), card=document.createElement('article'), img=document.createElement('img'), cap=document.createElement('div');
+      card.className='feed-card'; img.loading='lazy';
+      if(tipo==='ficha'){ img.src='assets/fichas/'+stem+'-a4.png'; img.alt='Ficha técnica do projeto '+num; }
+      else { img.src=contextuais[num] ? 'assets/vitrine/contextual/'+contextuais[num] : 'assets/referencias/'+stem+'.png'; img.alt='Projeto '+num+' com cachorro usando o móvel'; }
+      cap.className='feed-card__caption'; cap.innerHTML='<span class="feed-card__number">'+num+'</span><span>'+titulo(stem)+'</span>';
+      card.appendChild(img); card.appendChild(cap); feed.appendChild(card);
+    });
+  }
+  montarFeed('contextFeed','contexto'); montarFeed('fichaFeed','ficha');
+  document.querySelectorAll('[data-feed-target]').forEach(function(btn){ btn.addEventListener('click',function(){
+    var feed=document.getElementById(btn.getAttribute('data-feed-target')); if(!feed) return;
+    feed.dataset.columns=btn.getAttribute('data-columns');
+    btn.parentNode.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', b===btn?'true':'false'); });
+  }); });
+})();
+</script>
+
+
+</body>
+</html>

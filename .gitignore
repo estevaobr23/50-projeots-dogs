@@ -1,0 +1,24 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+scripts/previa-flipbook.pdf
+
+# Material bruto de origem — não usado pela página em si (index.html só lê
+# assets/fichas-preview, assets/vitrine, assets/depoimentos, assets/mockups
+# e os ícones da raiz). Fica só local; não precisa no repositório da página.
+ENTREGA-CATALOGO-50-PROJETOS-CAES/
+assets/fichas/
+assets/referencias/
+assets/ebook-inicio/
+assets/criativos-feed/
+
+# Resíduo de iteração dos mockups de bônus — só a versão "-transparent" é
+# usada pelo index.html; "-chroma" e "-v2" eram testes intermediários.
+assets/mockups/bonus/*-chroma.png
+assets/mockups/bonus/*-v2.png
+
+# Idem para o mockup do hero — só hero-header-transparent.png é referenciado.
+assets/mockups/hero-header.png
+assets/mockups/hero-header-chroma.png
+assets/mockups/hero-header-transparent-v2.png
