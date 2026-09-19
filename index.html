@@ -434,36 +434,6 @@ section{ padding:84px 0; position:relative; }
   border-radius:var(--radius-md); border:1px solid var(--border);
   box-shadow:0 6px 18px hsla(222,25%,15%,.12); object-fit:contain; background:#fffdf8; }
 
-/* ===== Feeds de demonstração e fichas ===== */
-.page-marquee,.ficha-marquee{ display:none; }
-.feed-panel{ margin-top:28px; }
-.feed-toolbar{ display:flex; align-items:center; justify-content:space-between; gap:18px;
-  flex-wrap:wrap; margin:0 0 22px; padding:14px 16px; border:1px solid var(--border);
-  border-radius:var(--radius-md); background:var(--white); box-shadow:var(--shadow-subtle); }
-.feed-toolbar p{ font-size:.92rem; color:var(--text-muted); }
-.feed-toolbar b{ color:var(--primary); }
-.feed-switch{ display:inline-flex; gap:7px; padding:4px; background:var(--bg-marfim-deep);
-  border-radius:var(--radius-pill); }
-.feed-switch button{ min-width:42px; border:0; border-radius:var(--radius-pill); padding:8px 11px;
-  font-family:var(--font-num); font-weight:800; color:var(--text-muted); background:transparent; cursor:pointer; }
-.feed-switch button[aria-pressed="true"]{ color:#fff; background:var(--primary); box-shadow:0 3px 9px hsla(222,30%,12%,.2); }
-.feed-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-.feed-grid[data-columns="1"]{ grid-template-columns:1fr; }
-.feed-card{ overflow:hidden; position:relative; background:#fff; border:1px solid var(--border);
-  border-radius:var(--radius-md); box-shadow:var(--shadow-subtle); }
-.feed-card img{ width:100%; height:auto; aspect-ratio:3/4; object-fit:contain; background:#fff; }
-.feed-card__caption{ display:flex; align-items:center; gap:10px; padding:11px 13px;
-  border-top:1px solid var(--border); color:var(--text-dark); font-family:var(--font-num); font-weight:800; line-height:1.25; }
-.feed-card__number{ display:grid; place-items:center; width:30px; height:30px; flex:none;
-  border-radius:50%; color:#fff; background:var(--coral-dark); font-size:.76rem; }
-.context-feed .feed-card img{ aspect-ratio:3/4; object-fit:cover; }
-.context-feed .feed-card__caption{ color:var(--primary); }
-.context-feed .feed-card{ transition:transform var(--transition),box-shadow var(--transition); }
-.context-feed .feed-card:hover{ transform:translateY(-4px); box-shadow:var(--shadow-medium); }
-@media (max-width:560px){
-  .feed-grid,.feed-grid[data-columns="1"]{ grid-template-columns:1fr; }
-  .feed-toolbar{ align-items:flex-start; }
-}
 @keyframes pm-scroll-left { from{transform:translateX(0)}    to{transform:translateX(-50%)} }
 @keyframes pm-scroll-right{ from{transform:translateX(-50%)} to{transform:translateX(0)} }
 
@@ -960,17 +930,6 @@ img[data-ph]::after{
 
     </div>
 
-    <div class="feed-panel reveal" id="contextFeedPanel">
-      <div class="feed-toolbar">
-        <p><b>50 móveis em uso real.</b> Explore o resultado de cada projeto com o cachorro usando a peça.</p>
-        <div class="feed-switch" aria-label="Colunas do feed de demonstrações">
-          <button type="button" data-feed-target="contextFeed" data-columns="1" aria-pressed="false">1 coluna</button>
-          <button type="button" data-feed-target="contextFeed" data-columns="2" aria-pressed="true">2 colunas</button>
-        </div>
-      </div>
-      <div class="feed-grid context-feed" id="contextFeed" data-columns="2"></div>
-    </div>
-
     <div class="page-marquee reveal">
       <div class="pm-row">
         <div class="pm-track pm-left">
@@ -1104,17 +1063,6 @@ img[data-ph]::after{
                 allowfullscreen frameborder="0"></iframe>
       </div>
       <p class="ep-caption">Folheie a prévia: capa, boas-vindas, como usar a ficha e o índice por categorias.</p>
-    </div>
-
-    <div class="feed-panel reveal" id="fichaFeedPanel">
-      <div class="feed-toolbar">
-        <p><b>As 50 fichas técnicas reais.</b> Veja todas em sequência e escolha como navegar.</p>
-        <div class="feed-switch" aria-label="Colunas do feed de fichas">
-          <button type="button" data-feed-target="fichaFeed" data-columns="1" aria-pressed="false">1 coluna</button>
-          <button type="button" data-feed-target="fichaFeed" data-columns="2" aria-pressed="true">2 colunas</button>
-        </div>
-      </div>
-      <div class="feed-grid ficha-feed" id="fichaFeed" data-columns="2"></div>
     </div>
 
     <div class="ficha-marquee reveal">
@@ -1371,14 +1319,14 @@ img[data-ph]::after{
       <div class="testi-card reveal delay-2">
         <div class="testi-head">
           <img class="avatar" src="assets/depoimentos/depo-3.jpg" loading="lazy"
-               alt="Foto de Rosângela T., marceneira" width="82" height="82" />
-          <span class="name">Rosângela T.</span>
+               alt="Foto de Marcelo F., marceneiro" width="82" height="82" />
+          <span class="name">Marcelo F.</span>
           <span class="meta"><span class="verified">✔ Verificado</span> &middot; Itajaí/SC</span>
         </div>
         <div class="stars">★★★★★</div>
-        <p class="quote">Mandei o catálogo no WhatsApp de uma cliente e ela escolheu
-           dois projetos na mesma conversa. <strong>Fechou sem pedir desconto</strong>,
-           coisa que nunca tinha acontecido.</p>
+        <p class="quote">Usei a calculadora de preço pra fechar o primeiro orçamento e não
+           deixei dinheiro na mesa. <strong>Sabia exatamente quanto cobrar</strong>,
+           coisa que eu sempre chutava antes.</p>
       </div>
 
     </div>
@@ -1673,29 +1621,6 @@ img[data-ph]::after{
   update();
 })();
 
-/* 6. FEEDS DE DEMONSTRAÇÃO E FICHAS */
-(function(){
-  var projetos = ['01-casinha-classica','02-casinha-varanda','03-casinha-isolada-externa','04-casinha-telhado-removivel','05-casinha-dupla','06-casinha-sob-escada','07-casinha-aparador-sala','08-casinha-suspensa-estrado','09-cama-estrado-ripado','10-cama-sofa-encosto','11-cama-pes-torneados','12-cama-dossel-cabeceira','13-cama-gaveta','14-cama-ortopedica-bordas-baixas','15-beliche-dois-caes','16-comedouro-elevado-duplo','17-comedouro-altura-regulavel','18-comedouro-porta-racao','19-comedouro-lento','20-estacao-alimentacao-canto','21-comedouro-baixo-pequeno-porte','22-rampa-sofa','23-rampa-dobravel-carro','24-escada-cama','25-escada-bau','26-rampa-degraus-combinados','27-rampa-piscina-deck','28-bau-organizador-brinquedos','29-painel-parede-coleiras','30-armario-racao-dosador','31-estacao-entrada','32-banco-bau-entrada','33-carrinho-apoio-rodizios','34-divisoria-portao-vao','35-mesa-tosa-braco','36-banheira-elevada-ralo','37-escada-acesso-banheira','38-estacao-secagem-secador','39-tapete-bandeja-patas','40-canil-modular-paineis','41-cobertura-telheiro-canil','42-caixa-areia-cavar','43-bebedouro-externo-reservatorio','44-banco-quintal-abrigo','45-portao-passagem-cerca','46-agility-basico','47-plataforma-comando','48-tabua-farejamento','49-caixa-enriquecimento-tampas','50-poste-marcacao-quintal'];
-  var contextuais = {'01':'01-casinha-classica.webp','02':'02-casinha-varanda.webp','03':'03-casinha-isolada.webp','06':'06-casinha-sob-escada.webp','08':'08-casinha-suspensa.webp','09':'09-cama-estrado.webp','10':'10-cama-sofa.webp','12':'12-cama-dossel.webp','15':'15-beliche-dois-caes.webp','16':'16-comedouro-duplo.webp','17':'17-comedouro-regulavel.webp','18':'18-comedouro-porta-racao.webp','20':'20-estacao-alimentacao.webp','22':'22-rampa-sofa.webp','24':'24-escada-cama.webp','28':'28-bau-brinquedos.webp','30':'30-armario-racao.webp','31':'31-estacao-entrada.webp','35':'35-mesa-tosa.webp','40':'40-canil-modular.webp','46':'46-agility.webp'};
-  function titulo(stem){ return stem.slice(3).replaceAll('-', ' '); }
-  function montarFeed(id, tipo){
-    var feed = document.getElementById(id); if(!feed) return;
-    projetos.forEach(function(stem){
-      var num=stem.slice(0,2), card=document.createElement('article'), img=document.createElement('img'), cap=document.createElement('div');
-      card.className='feed-card'; img.loading='lazy';
-      if(tipo==='ficha'){ img.src='assets/fichas/'+stem+'-a4.png'; img.alt='Ficha técnica do projeto '+num; }
-      else { img.src=contextuais[num] ? 'assets/vitrine/contextual/'+contextuais[num] : 'assets/referencias/'+stem+'.png'; img.alt='Projeto '+num+' com cachorro usando o móvel'; }
-      cap.className='feed-card__caption'; cap.innerHTML='<span class="feed-card__number">'+num+'</span><span>'+titulo(stem)+'</span>';
-      card.appendChild(img); card.appendChild(cap); feed.appendChild(card);
-    });
-  }
-  montarFeed('contextFeed','contexto'); montarFeed('fichaFeed','ficha');
-  document.querySelectorAll('[data-feed-target]').forEach(function(btn){ btn.addEventListener('click',function(){
-    var feed=document.getElementById(btn.getAttribute('data-feed-target')); if(!feed) return;
-    feed.dataset.columns=btn.getAttribute('data-columns');
-    btn.parentNode.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', b===btn?'true':'false'); });
-  }); });
-})();
 </script>
 
 

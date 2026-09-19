@@ -430,6 +430,105 @@ O `.cat-marquee` nomeia **32 projetos** e fecha com **"+ 18 outros projetos"**
 (32 + 18 = 50). Se a lista mudar de tamanho, recalcular — foi exatamente esse
 o bug que o irmão carregou por meses ("+35" quando já eram 100).
 
+## ⚠️ Bug real: "página fica branca a partir da seção 2" — CORRIGIDO em 19/09/2026
+
+Sintoma relatado pelo usuário: rolar a página parava de mostrar conteúdo
+logo depois dos cards da vitrine, com faixas brancas/vazias enormes.
+
+**Causa raiz:** alguma sessão anterior (não documentada em nenhum ponto
+deste arquivo até este commit) tinha adicionado, dentro das seções 2
+("Vitrine") e 4 ("Veja por dentro"), um **"feed de demonstração"** completo
+com as 50 fichas técnicas e as 50 imagens de contexto empilhadas em grid de
+2 colunas (`#contextFeedPanel`, `#fichaFeedPanel`, JS `montarFeed()`). Cada
+grid sozinha tinha **~17.000px de altura** (50 cards × ~664px ÷ 2 colunas) —
+por isso parecia que a página "travava": era preciso rolar 17 mil pixels de
+grid antes de ver qualquer coisa depois.
+
+O mesmo commit também tinha `.page-marquee,.ficha-marquee{ display:none; }`
+no CSS, escondendo os carrosséis de amostra originais (8-10 itens em loop
+infinito) que deveriam aparecer no lugar — ou seja, a versão compacta e
+correta existia no HTML mas estava oculta por CSS, substituída pela grid
+gigante.
+
+Efeito colateral que só apareceria depois de publicado: o JS desse feed
+referenciava `assets/fichas/<slug>-a4.png` — pasta que **foi
+intencionalmente excluída do git** (ver seção "Git e deploy" abaixo, ~88 MB
+de material bruto) — então mesmo sem o problema de altura, essas 50 imagens
+dariam 404 no site publicado.
+
+**Correção aplicada:**
+1. Removidos os dois blocos HTML (`#contextFeedPanel`, `#fichaFeedPanel`).
+2. Removido o CSS órfão (`.feed-panel`, `.feed-toolbar`, `.feed-switch`,
+   `.feed-grid`, `.feed-card` e a regra que escondia os marquees).
+3. Removida a IIFE JS `montarFeed()` (bloco "6. FEEDS DE DEMONSTRAÇÃO...").
+4. Os carrosséis originais (`.page-marquee` na seção 2, `.ficha-marquee` na
+   seção 4) voltaram a aparecer normalmente — eles nunca tinham sido
+   removidos do HTML, só ficaram escondidos.
+
+Resultado medido: altura de `.inside` caiu de 18.999px para 2.737px; altura
+total da página caiu de 47.147px para ~14.800px. Confirmado visualmente com
+scroll simulado passo a passo (Playwright) — full-page screenshot mostra
+todas as 13 seções fluindo sem gap.
+
+**Se uma futura sessão quiser reintroduzir uma galeria maior que a amostra
+de 8-10 fichas**, isso é uma decisão de produto que precisa ser tomada
+explicitamente com o usuário — não adicionar "por via das dúvidas". A regra
+da skill `padrao-lowticket` (seção 9.4) é clara: a amostra existe para
+provar qualidade, o catálogo completo é o que se paga para ver depois.
+
+## Depoimentos — revisão em 19/09/2026
+
+Dois ajustes pedidos pelo usuário:
+
+1. **Rosângela T. (Itajaí/SC) trocada por Marcelo F.** — mesma cidade,
+   mesmo selo de verificado, foto trocada de "mulher 3.jpg" para
+   "9 homem.jpg" (ambas do banco padrão de rostos da skill
+   `padrao-lowticket`, `assets/padrao/provas-sociais/`).
+2. **Citação reescrita** — a original mencionava "mandei o catálogo no
+   WhatsApp", que era sobre o bônus "Catálogo Interativo". **Esse bônus não
+   existe mais** (os 4 bônus atuais são: Calculadora de Preço e Lucro, Guia
+   de Proteção Contra Umidade, 50 Personalizações, Kit de Artes Para
+   Divulgação — ver seção de bônus abaixo). Nova citação fala da
+   Calculadora de Preço e Lucro, que é um bônus real e vigente.
+
+Os outros 2 depoimentos (Jocimar sobre a ficha da casinha, Alcides sobre a
+rampa) já falavam de projetos do catálogo, não de bônus — não precisaram de
+ajuste.
+
+## Git e deploy — RESOLVIDO em 18/09/2026
+
+**Repo local inicializado e pushado.** Remote: `origin` →
+`https://github.com/estevaobr23/50-projeots-dogs.git`, branch `main`.
+`salesPage` cadastrada na Cakto já aponta pro domínio da Vercel esperado
+(`https://50-projetos-moveis-caes.vercel.app/`) — o deploy automático via
+push depende de o repo já estar conectado a um projeto Vercel (fora do
+controle desta sessão de código; confirmar no painel se ainda não estiver).
+
+**O que foi filtrado do commit (não subiu, fica só local) — total do
+projeto é ~294 MB, o commit tem ~12 MB:**
+
+- `ENTREGA-CATALOGO-50-PROJETOS-CAES/` inteiro (120 MB) — material bruto de
+  origem, a página não referencia nada de lá diretamente
+- `assets/fichas/` (88 MB) — PNGs A4 originais das 50 fichas, duplicados;
+  a página usa só a versão otimizada em `assets/fichas-preview/` (668 KB)
+- `assets/referencias/` (22 MB) — as 50 folhas de referência do Gemini
+- `assets/ebook-inicio/`, `assets/criativos-feed/` — não referenciados pelo
+  `index.html`
+- Resíduos de iteração dos mockups (`*-chroma.png`, `*-v2.png`,
+  `hero-header.png`, `hero-header-transparent-v2.png`) — só a versão
+  `-transparent` de cada um é usada de verdade
+
+⚠️ **Se algum dia precisar do material bruto num outro lugar** (montar as
+fichas técnicas de verdade, regenerar imagem, etc.), ele está intacto em
+disco, só não faz parte do histórico do git. Antes de "limpar a pasta local"
+achando que é lixo, checar o `.gitignore` — essas pastas estão ali de
+propósito, não por engano.
+
+Nenhum segredo/credencial real foi commitado — conferido antes do push
+(as menções a `GEMINI_API_KEY`/`HEYZINE_API_KEY` no `contexto.md` e nos
+scripts são só o NOME da variável de ambiente, nunca o valor; a chave real
+mora em `~/.gemini/credentials.env`, fora do projeto).
+
 ## Servidor de preview local
 
 O processo não sobrevive ao fim da sessão. Para subir de novo:
